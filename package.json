@@ -1,13 +1,13 @@
 {
   "private": true,
   "scripts": {
-    "dev": "next",
+    "dev": "next dev -p 5555",
     "build": "next build",
-    "start": "next start",
+    "start": "next start -p 5555",
     "type-check": "tsc"
   },
   "dependencies": {
-    "@chakra-ui/react": "^1.8.6",
+    "@chakra-ui/react": "^1.8.7",
     "@emotion/react": "^11",
     "@emotion/styled": "^11",
     "formik": "^2.2.9",
@@ -20,8 +20,8 @@
   "devDependencies": {
     "@types/gtag.js": "0.0.10",
     "@types/node": "^12.12.21",
-    "@types/react": "^17.0.2",
+    "@types/react": "^17.0.43",
     "@types/react-dom": "^17.0.1",
-    "typescript": "4.0"
+    "typescript": "^4.3.2"
   }
 }
