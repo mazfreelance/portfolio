@@ -23,7 +23,7 @@ import DropdownLink from './dropdownlink';
 import { useRouter } from 'next/router';
 
 const links = [
-    { name: 'About', path: '/about' },
+    // { name: 'About', path: '/about' },
     { name: 'Portfolio', path: '/portfolio' },
     // { name: 'Blog', path: '/blog' },
 ];
@@ -46,7 +46,7 @@ export default function TopNav() {
     return (
         <>
             <Box
-                bg={ useColorModeValue('grey.100', 'gray.700') }
+                bg={ useColorModeValue('white', 'gray.700') }
                 px={ 4 }
                 boxShadow={ 'lg' }
                 position="fixed"

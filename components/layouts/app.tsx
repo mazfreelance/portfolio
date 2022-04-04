@@ -9,7 +9,7 @@ function AppLayout(props) {
     return (
         <Fragment>
             <TopNav />
-            <AppBackground />
+            {/* <AppBackground /> */}
             <Box textAlign={ 'center' }
                 fontSize="xl"
                 w={ ['90%', '85%', '80%'] }

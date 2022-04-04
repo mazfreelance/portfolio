@@ -1,21 +1,15 @@
+import Home from 'components/pages/home'
+import { NextPage } from 'next'
 import Link from 'next/link'
 import Layout from '../components/Layout'
+import PageLayout from '../components/layouts/page'
 
-// const IndexPage = () => (
-//   <Layout title="Home | Next.js + TypeScript Example">
-//     <h1>Hello Next.js 👋</h1>
-//     <p>
-//       <Link href="/about">
-//         <a>About</a>
-//       </Link>
-//     </p>
-//   </Layout>
-// )
-
-// export default IndexPage
-
-const IndexPage = () => (
-  <div></div>
-)
+const IndexPage: NextPage = (props) => {
+  return (
+    <PageLayout>
+      <Home />
+    </PageLayout>
+  )
+}
 
 export default IndexPage

@@ -21,7 +21,6 @@ function MyApp({ Component, pageProps }: AppProps) {
 
     return (
         <ChakraProvider>
-            <Component { ...pageProps } />
             <AppLayout>
                 <AnimatePresence
                     exitBeforeEnter

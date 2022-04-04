@@ -4,6 +4,8 @@
 //
 // import { User } from 'path/to/interfaces';
 
+import { ReactNode } from "react";
+
 export type User = {
   id: number
   name: string
@@ -25,4 +27,46 @@ export type DropdownLinkProps = {
   color?: string;
   routePath: string;
   onClose: () => void;
+}
+
+export type MetaProps = {
+  title?: string;
+  description?: string;
+  keywords?: string;
+  image?: string;
+}
+
+export type PageProps = {
+  children: ReactNode
+  title?: string
+  description?: string
+  keywords?: string
+  image?: string
+}
+
+export interface Career {
+  title: string;
+  alt: string;
+  role: string;
+  skills: string[];
+  period: string;
+  logo: string;
+}
+
+export interface Education {
+  title:        string;
+  alt:          string;
+  role:         string;
+  skills:       string[];
+  period:       string;
+  startingYear: string;
+  logo:         string;
+}
+
+export interface Skill {
+  name:        string;
+  description: string;
+  link:        string;
+  type:        string;
+  image:       string;
 }
