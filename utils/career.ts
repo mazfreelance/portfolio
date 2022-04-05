@@ -1,6 +1,6 @@
-import { Career } from "../interfaces"
+import { CareerProps } from "../interfaces"
 
-export const career: Career[] = [
+export const career: CareerProps[] = [
     {
         title: 'Ionnex Sdn Bhd',
         alt: 'Inx image',

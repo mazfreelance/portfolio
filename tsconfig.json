@@ -18,7 +18,7 @@
       "*": ["/*"],
       "components/*": ["components/*"],
       "lib/*": ["lib/*"],
-      "data/*": ["data/*"],
+      "utils/*": ["utils/*"],
       "pages/*": ["pages/*"],
       "config/*": ["config/*"],
       "interfaces/*": ["interfaces/*"],

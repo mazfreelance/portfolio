@@ -1,6 +1,6 @@
-import { Skill } from "../interfaces";
+import { SkillProps } from "../interfaces";
 
-export const skills: Skill[] = [
+export const skills: SkillProps[] = [
     {
         name: 'PHP',
         description: 'Web development, Scrapping',
@@ -63,6 +63,13 @@ export const skills: Skill[] = [
         link: 'https://www.mysql.com/',
         type: 'database',
         image: '/assets/images/skills/mysql.png',
+    },
+    {
+        name: 'SQLite',
+        description: 'Database',
+        link: 'https://www.sqlite.org',
+        type: 'database',
+        image: '/assets/images/skills/sqlite.png',
     },
     {
         name: 'Mysql',

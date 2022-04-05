@@ -6,6 +6,10 @@
 
 import { ReactNode } from "react";
 
+export interface Props {
+  children: ReactNode
+}
+
 export type User = {
   id: number
   name: string
@@ -44,7 +48,7 @@ export type PageProps = {
   image?: string
 }
 
-export interface Career {
+export interface CareerProps {
   title: string;
   alt: string;
   role: string;
@@ -53,7 +57,7 @@ export interface Career {
   logo: string;
 }
 
-export interface Education {
+export interface EducationProps {
   title:        string;
   alt:          string;
   role:         string;
@@ -63,7 +67,7 @@ export interface Education {
   logo:         string;
 }
 
-export interface Skill {
+export interface SkillProps {
   name:        string;
   description: string;
   link:        string;

@@ -1,6 +1,6 @@
-import { Education } from "../interfaces";
+import { EducationProps } from "../interfaces";
 
-export const eduction: Education[] = [
+export const eduction: EducationProps[] = [
     {
         title: 'Universiti Teknologi MARA',
         alt: 'UiTM image',

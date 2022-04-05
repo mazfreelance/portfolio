@@ -7,6 +7,7 @@ import {
     Icon,
     Skeleton,
     Spacer,
+    Stack,
     Text
 } from "@chakra-ui/react"
 import { MotionBox, MotionFlex } from "components/animations/motion"
@@ -93,14 +94,21 @@ const Home: React.FC = (props) => {
                 <Section
                     delay={0.1}
                     textAlign="left">
-                    <Header
-                        underlineColor={'red'}
-                        underlineHeight={'2px'}
-                        textAlign={'left'}
-                        size={'2xl'}
-                        mt={0} mb={0}>
-                        Work
-                    </Header> <Icon as={FcAbout}/>
+                    <Heading>
+                        <Flex alignItems={'center'}>
+                            <Header
+                                underlineColor={'red'}
+                                underlineHeight={'2px'}
+                                textAlign={'left'}
+                                size={'2xl'}
+                                mt={0} mb={0}>
+                                Work
+                            </Header>
+                            <Stack pl={3}>
+                                <Box as={FcAbout} size={25}></Box>
+                            </Stack>
+                        </Flex>
+                    </Heading>
                     <Text
                         textAlign={'justify'}>
                         Takuya is a freelance and a full-stack developer based in Osaka with a passion for building digital services/stuff he wants. He has a knack for all things launching products, from planning and designing all the way to solving real-life problems with code. When not online, he loves hanging out with his camera. Currently, he is living off of his own product called Inkdrop.
@@ -109,26 +117,40 @@ const Home: React.FC = (props) => {
                 <Section
                     delay={0.2}
                     textAlign="left">
-                    <Header
-                        underlineColor={'red'}
-                        underlineHeight={'2px'}
-                        textAlign={'left'}
-                        size={'2xl'}
-                        mt={0} mb={0}>
-                        Career <Icon as={FcBriefcase} />
-                    </Header>
+                    <Heading>
+                        <Flex alignItems={'center'}>
+                            <Header
+                                underlineColor={'red'}
+                                underlineHeight={'2px'}
+                                textAlign={'left'}
+                                size={'2xl'}
+                                mt={0} mb={0}>
+                                Career
+                            </Header>
+                            <Stack pl={3}>
+                                <Box as={FcBriefcase} size={25}></Box>
+                            </Stack>
+                        </Flex>
+                    </Heading>
                 </Section>
                 <Section
                     delay={0.3}
                     textAlign="left">
-                    <Header
-                        underlineColor={'red'}
-                        underlineHeight={'2px'}
-                        textAlign={'left'}
-                        size={'2xl'}
-                        mt={0} mb={0}>
-                        Education <Icon as={FcGraduationCap}/>
-                    </Header>
+                    <Heading>
+                        <Flex alignItems={'center'}>
+                            <Header
+                                underlineColor={'red'}
+                                underlineHeight={'2px'}
+                                textAlign={'left'}
+                                size={'2xl'}
+                                mt={0} mb={0}>
+                                Education
+                            </Header>
+                            <Stack pl={3}>
+                                <Box as={FcGraduationCap} size={25}></Box>
+                            </Stack>
+                        </Flex>
+                    </Heading>
                 </Section>
             </MotionBox>
         </Flex>
