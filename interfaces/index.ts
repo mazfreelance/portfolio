@@ -4,6 +4,10 @@
 //
 // import { User } from 'path/to/interfaces';
 
+import {
+  FlexProps,
+  TagProps as ChakraTagProps
+} from "@chakra-ui/react";
 import { ReactNode } from "react";
 
 export interface Props {
@@ -48,29 +52,33 @@ export type PageProps = {
   image?: string
 }
 
-export interface CareerProps {
+export interface CareerEducationProps {
   title: string;
-  alt: string;
   role: string;
   skills: string[];
   period: string;
   logo: string;
+  alt?: string;
+  startingYear?: string;
 }
 
-export interface EducationProps {
-  title:        string;
-  alt:          string;
-  role:         string;
-  skills:       string[];
-  period:       string;
-  startingYear: string;
-  logo:         string;
+interface Skill {
+  name: string;
+  description: string;
+  link: string;
+  type: string;
+  image: string;
 }
 
 export interface SkillProps {
-  name:        string;
-  description: string;
-  link:        string;
-  type:        string;
-  image:       string;
+  skills: Skill[]
+}
+export interface CTagProps extends ChakraTagProps {
+  name: string
+  interactive?: boolean
+}
+export interface FProps extends FlexProps {
+  interactive?: boolean,
+  tags?: string[],
+  tagProps?: Partial<FProps>
 }

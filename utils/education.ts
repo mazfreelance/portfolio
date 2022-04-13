@@ -1,6 +1,6 @@
-import { EducationProps } from "../interfaces";
+import { CareerEducationProps } from "../interfaces";
 
-export const eduction: EducationProps[] = [
+export const education: CareerEducationProps[] = [
     {
         title: 'Universiti Teknologi MARA',
         alt: 'UiTM image',
@@ -8,7 +8,7 @@ export const eduction: EducationProps[] = [
         skills: ['project management', 'web development', 'data structures'],
         period: '2014 - 2016',
         startingYear: '2014',
-        logo: '/assets/images/logos/fast.png'
+        logo: '/assets/images/logos/UiTM.png'
     },
     {
         title: 'Universiti Teknologi MARA',
@@ -17,6 +17,6 @@ export const eduction: EducationProps[] = [
         skills: ['programming', 'web development', 'data structures'],
         period: '2011 - 2014',
         startingYear: '2011',
-        logo: '/assets/images/logos/fast.png'
+        logo: '/assets/images/logos/UiTM.png'
     },
 ]

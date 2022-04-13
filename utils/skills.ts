@@ -1,10 +1,8 @@
-import { SkillProps } from "../interfaces";
-
-export const skills: SkillProps[] = [
+export const skillsArray = [
     {
         name: 'PHP',
         description: 'Web development, Scrapping',
-        link: 'https://rubyonrails.org/',
+        link: 'https://www.php.net/',
         type: 'development',
         image: '/assets/images/skills/php.png',
     },
@@ -58,6 +56,13 @@ export const skills: SkillProps[] = [
         image: '/assets/images/skills/bootstrap.png',
     },
     {
+        name: 'Tailwind CSS',
+        description: 'Web design',
+        link: 'https://tailwindcss.com/',
+        type: 'design',
+        image: '/assets/images/skills/tailwind.png',
+    },
+    {
         name: 'MySql',
         description: 'Database',
         link: 'https://www.mysql.com/',
@@ -69,14 +74,7 @@ export const skills: SkillProps[] = [
         description: 'Database',
         link: 'https://www.sqlite.org',
         type: 'database',
-        image: '/assets/images/skills/sqlite.png',
-    },
-    {
-        name: 'Mysql',
-        description: 'Database',
-        link: 'https://www.mysql.com/',
-        type: 'database',
-        image: '/assets/images/skills/mysql.png',
+        image: '/assets/images/skills/sqlite.jpg',
     },
     {
         name: 'Redis',
@@ -113,4 +111,11 @@ export const skills: SkillProps[] = [
         type: 'development',
         image: '/assets/images/skills/vscode.png',
     },
+    {
+        name: 'Adobe Photoshop',
+        description: 'Web design',
+        link: 'https://www.adobe.com/sea/products/photoshop.html',
+        type: 'design',
+        image: '/assets/images/skills/photoshop.png',
+    }
 ]

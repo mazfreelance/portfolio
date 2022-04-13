@@ -22,7 +22,7 @@ export const ColorModeSwitcher = (props: any) => {
             cursor="pointer"
             fontSize={['lg', 'xl', '2xl']}
             >
-                {mode == 'dark' ? '☀️' : '🌕'}
+                {mode == 'dark' ? '⛅' : '🌙'}
             </MotionBox>
         </AnimatePresence>
     )
