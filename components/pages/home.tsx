@@ -13,7 +13,7 @@ import {
 } from "@chakra-ui/react"
 import { MotionBox, MotionFlex } from "components/animations/motion"
 import { PageSliderFade, StaggerChildren } from "components/animations/page-transition"
-import Card from "components/layouts/shared/card"
+import { Card } from "components/layouts/shared/card"
 import Header from "components/layouts/shared/header"
 import Section from "components/layouts/shared/section"
 import NextLink from "next/link"

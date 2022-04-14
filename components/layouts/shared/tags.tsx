@@ -2,6 +2,7 @@ import {
     Flex,
     Tag as ChakraTag
 } from "@chakra-ui/react"
+import { getTagColor } from "components/theme"
 import { CTagProps, FProps } from "./../../../interfaces"
 
 export const Tag: React.FC<CTagProps> = ({
@@ -12,6 +13,7 @@ export const Tag: React.FC<CTagProps> = ({
     const propsOverride = {
         size: 'sm',
         verticalAlign: 'middle',
+        colorScheme: getTagColor(name)
     }
     if (!interactive) {
         return (

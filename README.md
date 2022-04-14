@@ -1,4 +1,14 @@
-# TypeScript Next.js example
+# [mohdazmin[dot]com](https://mohdazmin.com)
+## Portfolio rework 2.0
+
+- Language: [ReactJS](https://reactjs.org)
+- Framework: [NextJS](https://nextjs.org)
+- UI: [Chakra UI](https://chakra-ui.com/)
+- Animation: [Framer Motion](https://www.framer.com/motion/)
+
+# ChangeLog
+
+<!-- # TypeScript Next.js example
 
 This is a really simple project that shows the usage of Next.js with TypeScript.
 
@@ -42,4 +52,4 @@ A `type-check` script is also added to `package.json`, which runs TypeScript's `
 
 [refer link](https://github.com/MA-Ahmad/myPortfolio)
 [refer link-2](https://my-portfolio-ma-ahmad.vercel.app)
-[refer link-3](https://www.craftz.dog)
+[refer link-3](https://www.craftz.dog) -->

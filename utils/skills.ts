@@ -85,14 +85,14 @@ export const skillsArray = [
     },
     {
         name: 'Digital Ocean',
-        description: 'Devops',
+        description: 'Cloud',
         link: 'https://www.digitalocean.com/',
         type: 'devops',
         image: '/assets/images/skills/digital-ocean.png',
     },
     {
         name: 'Media Temple',
-        description: 'Devops',
+        description: 'Web Hosting',
         link: 'https://mediatemple.net/',
         type: 'devops',
         image: '/assets/images/skills/media-temple.png',
@@ -117,5 +117,12 @@ export const skillsArray = [
         link: 'https://www.adobe.com/sea/products/photoshop.html',
         type: 'design',
         image: '/assets/images/skills/photoshop.png',
-    }
+    },
+    {
+        name: 'Tencent Cloud',
+        description: 'Cloud',
+        link: 'https://intl.cloud.tencent.com/',
+        type: 'devops',
+        image: '/assets/images/skills/tencent-cloud.png',
+    },
 ]

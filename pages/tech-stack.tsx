@@ -32,7 +32,7 @@ import { BsCardChecklist } from "react-icons/bs";
 import { GoDatabase } from "react-icons/go";
 import Section from "components/layouts/shared/section"
 import Header from "components/layouts/shared/header"
-import SkillCard from "components/layouts/shared/skill-card"
+import { SkillCard } from "components/layouts/shared/card"
 import { MotionBox } from "components/animations/motion"
 
 const tabLists = [
