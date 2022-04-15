@@ -24,7 +24,7 @@ import { useRouter } from 'next/router';
 
 const links = [
     // { name: 'About', path: '/about' },
-    { name: 'Portfolio', path: '/portfolio' },
+    { name: 'Projects', path: '/projects' },
     // { name: 'Blog', path: '/blog' },
 ];
 
