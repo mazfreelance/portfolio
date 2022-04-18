@@ -339,7 +339,7 @@ export const ProjectCard = (props: ProjectProps) => {
                             w={327}
                             src={image}
                             alt={name}
-                            fallbackSrc={"/assets/images/placeholder.png"}
+                            fallbackSrc={"/assets/images/no-image.jpg"}
                         />
                         <VStack align={'start'} flexGrow={1} spacing={0}>
                             <Text fontWeight="bold" fontSize="md" noOfLines={2}>{name}</Text>
