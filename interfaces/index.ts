@@ -82,3 +82,12 @@ export interface FProps extends FlexProps {
   tags?: string[],
   tagProps?: Partial<FProps>
 }
+
+export interface ProjectProps {
+  name: string;
+  description: string;
+  publish: string;
+  image?: string;
+  filter?: string[];
+  skills: string[];
+}

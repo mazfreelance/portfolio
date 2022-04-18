@@ -14,6 +14,7 @@ const title = 'Projects';
 const description = 'List of projects I have worked on, during my career as Software Developer.'
 
 const Project: NextPage = (props) => {
+    
     return (
         <Fragment>
             <PageLayout title={title} description={description}>
@@ -24,7 +25,7 @@ const Project: NextPage = (props) => {
                         </Header>
                         <Text textAlign="left" fontSize={['md', 'xl']}>{description}</Text>
                     </VStack>
-                    <VStack>
+                    <VStack spacing={3}>
                         <ProjectLists />
                     </VStack>
                 </PageSliderFade>

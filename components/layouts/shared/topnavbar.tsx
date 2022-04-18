@@ -18,7 +18,7 @@ import { MotionBox } from '../../animations/motion';
 import { ColorModeSwitcher } from './colorModeSwitcher';
 import NextLink from 'next/link';
 import NavLink from './navlink';
-import ContactUs from './contactUs';
+import ContactUs from '../../pages/contactUs';
 import DropdownLink from './dropdownlink';
 import { useRouter } from 'next/router';
 

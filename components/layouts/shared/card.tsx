@@ -20,7 +20,7 @@ import {
     CardTransition,
     item
 } from "components/animations/page-transition";
-import { CareerEducationProps } from "../../../interfaces";
+import { CareerEducationProps, ProjectProps } from "../../../interfaces";
 import { Tags } from "./tags";
 import { usePalette } from "react-palette";
 import { BiGitRepoForked, BiStar } from "react-icons/bi"
@@ -301,6 +301,63 @@ export const GitCard = (props: GitLiveProps) => {
                     </Box>
                 </VStack>
             </Box>
+        </MotionBox>
+    )
+}
+
+export const ProjectCard = (props: ProjectProps) => {
+    const { name, description, publish, image, skills } = props
+
+    const { data, loading } = usePalette(image)
+    return (
+        <MotionBox variant={item}>
+            <MotionBox whileHover={{ y: -5 }}>
+                {/* <NextLink href={link} passHref> */}
+                {/* <Link isExternal> */}
+                <HStack
+                    w="100%"
+                    p={4}
+                    bg={useColorModeValue('white', 'gray.800')}
+                    borderColor={useColorModeValue('gray.100', 'gray.700')}
+                    rounded="xl"
+                    borderWidth="1px"
+                    textAlign="left"
+                    align="start"
+                    spacing={4}
+                    _hover={{ shadow: 'md' }}
+                >
+                    <VStack
+                        align={'start'}
+                        justify="flex-start"
+                        spacing={1}
+                        maxW="lg"
+                        h="100%"
+                    >
+
+                        <Image
+                            h={250}
+                            w={327}
+                            src={image}
+                            alt={name}
+                            fallbackSrc={"/assets/images/placeholder.png"}
+                        />
+                        <VStack align={'start'} flexGrow={1} spacing={0}>
+                            <Text fontWeight="bold" fontSize="md" noOfLines={2}>{name}</Text>
+                            <Text fontSize="small">&lt;{publish}&gt;</Text>
+                            <Text fontSize="sm">{description}</Text>
+                            <Tags
+                                tags={skills}
+                                interactive={false}
+                                tagProps={{
+                                    padding: '0 10px'
+                                }}
+                            />
+                        </VStack>
+                    </VStack>
+                </HStack>
+                {/* </Link> */}
+                {/* </NextLink> */}
+            </MotionBox>
         </MotionBox>
     )
 }
