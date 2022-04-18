@@ -76,44 +76,52 @@ const ProjectLists = ({ ...props }) => {
                         </SimpleGrid>
                     </TabPanel>
                     <TabPanel>
-                        {projects.map((item, idx) => (
-                            <ProjectCard
-                                name={item.name}
-                                description={item.description}
-                                publish={item.publish}
-                                image={item.image}
-                                skills={item.skills} />
-                        ))}
+                        <SimpleGrid columns={[1, 1, 2]} spacing={4} mt={3}>
+                            {projects.map((item, idx) => (
+                                <ProjectCard
+                                    name={item.name}
+                                    description={item.description}
+                                    publish={item.publish}
+                                    image={item.image}
+                                    skills={item.skills} />
+                            ))}
+                        </SimpleGrid>
                     </TabPanel>
                     <TabPanel>
-                        {projects.map((item, idx) => (
-                            <ProjectCard
-                                name={item.name}
-                                description={item.description}
-                                publish={item.publish}
-                                image={item.image}
-                                skills={item.skills} />
-                        ))}
+                        <SimpleGrid columns={[1, 1, 2]} spacing={4} mt={3}>
+                            {projects.map((item, idx) => (
+                                <ProjectCard
+                                    name={item.name}
+                                    description={item.description}
+                                    publish={item.publish}
+                                    image={item.image}
+                                    skills={item.skills} />
+                            ))}
+                        </SimpleGrid>
                     </TabPanel>
                     <TabPanel>
-                        {projects.map((item, idx) => (
-                            <ProjectCard
-                                name={item.name}
-                                description={item.description}
-                                publish={item.publish}
-                                image={item.image}
-                                skills={item.skills} />
-                        ))}
+                        <SimpleGrid columns={[1, 1, 2]} spacing={4} mt={3}>
+                            {projects.map((item, idx) => (
+                                <ProjectCard
+                                    name={item.name}
+                                    description={item.description}
+                                    publish={item.publish}
+                                    image={item.image}
+                                    skills={item.skills} />
+                            ))}
+                        </SimpleGrid>
                     </TabPanel>
                     <TabPanel>
-                        {projects.map((item, idx) => (
-                            <ProjectCard
-                                name={item.name}
-                                description={item.description}
-                                publish={item.publish}
-                                image={item.image}
-                                skills={item.skills} />
-                        ))}
+                        <SimpleGrid columns={[1, 1, 2]} spacing={4} mt={3}>
+                            {projects.map((item, idx) => (
+                                <ProjectCard
+                                    name={item.name}
+                                    description={item.description}
+                                    publish={item.publish}
+                                    image={item.image}
+                                    skills={item.skills} />
+                            ))}
+                        </SimpleGrid>
                     </TabPanel>
                 </TabPanels>
             </Tabs>
