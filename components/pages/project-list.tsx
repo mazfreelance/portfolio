@@ -64,14 +64,15 @@ const ProjectLists = ({ ...props }) => {
                 </TabList>
                 <TabPanels>
                     <TabPanel>
-                        <SimpleGrid columns={[1, 1, 2]} spacing={4} mt={3}>
+                        <SimpleGrid columns={[1, 1, 3]} spacing={4} mt={3}>
                             {projects.map((item, idx) => (
                                 <ProjectCard
                                     name={item.name}
                                     description={item.description}
                                     publish={item.publish}
                                     image={item.image}
-                                    skills={item.skills} />
+                                    skills={item.skills}
+                                    link={item.link} />
                             ))}
                         </SimpleGrid>
                     </TabPanel>
@@ -83,7 +84,8 @@ const ProjectLists = ({ ...props }) => {
                                     description={item.description}
                                     publish={item.publish}
                                     image={item.image}
-                                    skills={item.skills} />
+                                    skills={item.skills}
+                                    link={item.link} />
                             ))}
                         </SimpleGrid>
                     </TabPanel>
@@ -95,7 +97,8 @@ const ProjectLists = ({ ...props }) => {
                                     description={item.description}
                                     publish={item.publish}
                                     image={item.image}
-                                    skills={item.skills} />
+                                    skills={item.skills}
+                                    link={item.link} />
                             ))}
                         </SimpleGrid>
                     </TabPanel>
@@ -107,7 +110,8 @@ const ProjectLists = ({ ...props }) => {
                                     description={item.description}
                                     publish={item.publish}
                                     image={item.image}
-                                    skills={item.skills} />
+                                    skills={item.skills}
+                                    link={item.link} />
                             ))}
                         </SimpleGrid>
                     </TabPanel>
@@ -119,7 +123,8 @@ const ProjectLists = ({ ...props }) => {
                                     description={item.description}
                                     publish={item.publish}
                                     image={item.image}
-                                    skills={item.skills} />
+                                    skills={item.skills}
+                                    link={item.link} />
                             ))}
                         </SimpleGrid>
                     </TabPanel>

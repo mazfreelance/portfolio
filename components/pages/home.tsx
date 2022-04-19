@@ -119,7 +119,7 @@ const Home: React.FC = (props) => {
                             </Heading>
                             <Text
                                 textAlign={'justify'}>
-                                Takuya is a freelance and a full-stack developer based in Osaka with a passion for building digital services/stuff he wants. He has a knack for all things launching products, from planning and designing all the way to solving real-life problems with code. When not online, he loves hanging out with his camera. Currently, he is living off of his own product called Inkdrop.
+                                Hi👋, I am Azmin and a web developer based in Kuala Lumpur, Malaysia with a passion for building digital services. I have 5+ years working experience as a Web Developer for multiple company as a full time and a freelance. I love working in a team and sharing new knowledge. You can free around on my page to know more about me. Thanks for visiting this page. 🤙
                             </Text>
                         </Section>
                         <Section

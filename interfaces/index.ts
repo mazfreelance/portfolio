@@ -90,4 +90,5 @@ export interface ProjectProps {
   image?: string;
   filter?: string[];
   skills: string[];
+  link: string;
 }

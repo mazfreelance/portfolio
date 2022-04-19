@@ -7,7 +7,8 @@ export const projects: ProjectProps[] = [
         publish: '2021',
         image: '/assets/images/projects/kolstore.png',
         filter: ['webapp', 'api', 'ecommerce'],
-        skills: ['PHP', 'Laravel', 'JavaScript', 'VueJS']
+        skills: ['PHP', 'Laravel', 'JavaScript', 'VueJS'],
+        link: '/projects/kolstore'
     },
     {
         name: 'Nimfa',
@@ -15,7 +16,8 @@ export const projects: ProjectProps[] = [
         publish: '2021',
         image: '/assets/images/projects/nimfa.png',
         filter: ['api'],
-        skills: ['PHP', 'Laravel']
+        skills: ['PHP', 'Laravel'],
+        link: '/projects/nimfa'
     },
     {
         name: 'Continuing Profesional Development (CPD) Module',
@@ -23,7 +25,8 @@ export const projects: ProjectProps[] = [
         publish: '2020',
         image: '/assets/images/projects/fimm.png',
         filter: ['webapp', 'api'],
-        skills: ['HTML', 'PHP', 'Laravel', 'JavaScript', 'VueJS']
+        skills: ['HTML', 'PHP', 'Laravel', 'JavaScript', 'VueJS'],
+        link: '/projects/fimm'
     },
     {
         name: 'Republic GG',
@@ -31,7 +34,8 @@ export const projects: ProjectProps[] = [
         publish: '2019',
         image: '/assets/images/projects/rgg.png',
         filter: ['webapp', 'api', 'ecommerce'],
-        skills: ['HTML', 'Sass', 'PHP', 'Yii2', 'Laravel', 'Bootstrap 4', 'JavaScript']
+        skills: ['HTML', 'Sass', 'PHP', 'Yii2', 'Laravel', 'Bootstrap 4', 'JavaScript'],
+        link: '/projects/rgg'
     },
     {
         name: 'Attendance Management Systems',
@@ -39,7 +43,8 @@ export const projects: ProjectProps[] = [
         publish: '2018',
         image: '/assets/images/projects/ams.png',
         filter: ['webapp'],
-        skills: ['HTML', 'CSS', 'PHP', 'Bootstrap 3', 'JQuery']
+        skills: ['HTML', 'CSS', 'PHP', 'Bootstrap 3', 'JavaScript'],
+        link: '/projects/ams'
     },
     {
         name: 'Workshire',
@@ -47,7 +52,8 @@ export const projects: ProjectProps[] = [
         publish: '2018',
         image: '/assets/images/projects/workshire.png',
         filter: ['webapp'],
-        skills: ['HTML', 'CSS', 'PHP', 'Wordpress']
+        skills: ['HTML', 'CSS', 'PHP', 'Boostrap 3', 'JavaScript'],
+        link: '/projects/workshire'
     },
     {
         name: 'Talent Suites',
@@ -55,7 +61,8 @@ export const projects: ProjectProps[] = [
         publish: '2017',
         image: '/assets/images/projects/ts.png',
         filter: ['website'],
-        skills: ['HTML', 'CSS', 'PHP', 'Wordpress']
+        skills: ['HTML', 'CSS', 'PHP', 'Wordpress'],
+        link: '/projects/talent-suites'
     },
     {
         name: 'World Energy Council Malaysia',
@@ -63,7 +70,8 @@ export const projects: ProjectProps[] = [
         publish: '2016',
         image: '/assets/images/projects/worldenergy.png',
         filter: ['website'],
-        skills: ['HTML', 'CSS', 'PHP', 'JavaScript']
+        skills: ['HTML', 'CSS', 'PHP', 'JavaScript'],
+        link: '/projects/wecm'
     },
     {
         name: 'Inmal Jaya Construction (IJaC) Booking Management system',
@@ -71,7 +79,8 @@ export const projects: ProjectProps[] = [
         publish: '2016',
         image: null,
         filter: ['webapp'],
-        skills: ['Java']
+        skills: ['Java'],
+        link: '/projects/ijac'
     },
     {
         name: 'Hotel Management system',
@@ -79,7 +88,8 @@ export const projects: ProjectProps[] = [
         publish: '2015',
         image: null,
         filter: ['webapp'],
-        skills: ['HTML', 'CSS', 'PHP', 'JavaScript']
+        skills: ['HTML', 'CSS', 'PHP', 'JavaScript'],
+        link: '/projects/hms'
     }
 ]
 

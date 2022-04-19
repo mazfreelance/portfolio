@@ -31,69 +31,69 @@ export const Card = (props: CareerEducationProps) => {
     return (
         <CardTransition>
             <Box
-                px={4}
-                py={5}
+                px={ 4 }
+                py={ 5 }
                 rounded="md"
-                borderWidth={1}
-                position={"relative"}
-                _hover={{ shadow: "lg" }}
+                borderWidth={ 1 }
+                position={ "relative" }
+                _hover={ { shadow: "lg" } }
             >
                 <Flex justifyContent="space-between">
                     <Flex>
                         <Image
                             rounded="full"
-                            w={16}
-                            h={16}
+                            w={ 16 }
+                            h={ 16 }
                             objectFit="cover"
-                            fallbackSrc={"/assets/images/placeholder.png"}
-                            src={logo}
-                            alt={alt}
+                            fallbackSrc={ "/assets/images/placeholder.png" }
+                            src={ logo }
+                            alt={ alt }
                         />
-                        <Stack spacing={2} align={"left"} pl={4}>
-                            <Heading textAlign={"left"} fontSize={"xl"}>
-                                {title}
+                        <Stack spacing={ 2 } align={ "left" } pl={ 4 }>
+                            <Heading textAlign={ "left" } fontSize={ "xl" }>
+                                { title }
                             </Heading>
-                            <Heading textAlign={'left'} fontSize={"sm"}>
-                                {role}
+                            <Heading textAlign={ 'left' } fontSize={ "sm" }>
+                                { role }
                             </Heading>
-                            <Heading textAlign={"left"} fontSize={"sm"} display={["flex", "flex", "none", "none"]}>
-                                <Text fontSize={12}>{period}</Text>
+                            <Heading textAlign={ "left" } fontSize={ "sm" } display={ ["flex", "flex", "none", "none"] }>
+                                <Text fontSize={ 12 }>{ period }</Text>
                             </Heading>
                             <Stack
-                                spacing={2}
-                                mt={3}
+                                spacing={ 2 }
+                                mt={ 3 }
                                 isInline
                                 alignItems="center"
-                                display={["none", "none", "flex", "flex"]}
+                                display={ ["none", "none", "flex", "flex"] }
                             >
                                 <Tags
-                                    tags={skills}
-                                    interactive={false}
-                                    tagProps={{
+                                    tags={ skills }
+                                    interactive={ false }
+                                    tagProps={ {
                                         padding: "0 6px",
-                                    }}
+                                    } }
                                 />
                             </Stack>
                         </Stack>
                     </Flex>
-                    <Stack display={["none", "none", "flex", "flex"]}>
-                        <Text fontSize={14}>{period}</Text>
+                    <Stack display={ ["none", "none", "flex", "flex"] }>
+                        <Text fontSize={ 14 }>{ period }</Text>
                     </Stack>
                 </Flex>
 
                 <Stack
-                    spacing={1}
-                    mt={3}
+                    spacing={ 1 }
+                    mt={ 3 }
                     isInline
                     alignItems="center"
-                    display={['flex', 'flex', 'none', 'none']}
+                    display={ ['flex', 'flex', 'none', 'none'] }
                 >
                     <Tags
-                        tags={skills}
-                        interactive={false}
-                        tagProps={{
+                        tags={ skills }
+                        interactive={ false }
+                        tagProps={ {
                             padding: '0 3px'
-                        }}
+                        } }
                     />
                 </Stack>
             </Box>
@@ -104,61 +104,61 @@ export const Card = (props: CareerEducationProps) => {
 export const SkillCard = ({ name, description, link, image }) => {
     const { data, loading } = usePalette(image)
     return (
-        <MotionBox variant={item}>
-            <MotionBox whileHover={{ y: -5 }}>
-                <NextLink href={link} passHref>
+        <MotionBox variant={ item }>
+            <MotionBox whileHover={ { y: -5 } }>
+                <NextLink href={ link } passHref>
                     <Link isExternal>
                         <HStack
                             w="100%"
-                            p={4}
-                            bg={useColorModeValue('white', 'gray.800')}
-                            borderColor={useColorModeValue('gray.100', 'gray.700')}
+                            p={ 4 }
+                            bg={ useColorModeValue('white', 'gray.800') }
+                            borderColor={ useColorModeValue('gray.100', 'gray.700') }
                             rounded="xl"
                             borderWidth="1px"
                             textAlign="left"
                             align="start"
-                            spacing={4}
-                            _hover={{ shadow: 'md' }}
+                            spacing={ 4 }
+                            _hover={ { shadow: 'md' } }
                         >
                             <Box
-                                rounded={'lg'}
-                                p={2}
-                                overflow={'hidden'}
-                                lineHeight={0}
-                                position={'relative'}
+                                rounded={ 'lg' }
+                                p={ 2 }
+                                overflow={ 'hidden' }
+                                lineHeight={ 0 }
+                                position={ 'relative' }
                                 boxShadow="inset 0 0 1px 1px rgba(0, 0, 0, 0.015)"
                             >
                                 <Box
-                                    bg={data.lightVibrant}
-                                    position={'absolute'}
-                                    top={0}
-                                    bottom={0}
-                                    left={0}
-                                    right={0}
-                                    opacity={0.25}
+                                    bg={ data.lightVibrant }
+                                    position={ 'absolute' }
+                                    top={ 0 }
+                                    bottom={ 0 }
+                                    left={ 0 }
+                                    right={ 0 }
+                                    opacity={ 0.25 }
                                 ></Box>
-                                {loading ? (
-                                    <Skeleton height={26} width={26} rounded={'md'} />
+                                { loading ? (
+                                    <Skeleton height={ 26 } width={ 26 } rounded={ 'md' } />
                                 ) : (
                                     <Image
-                                        src={image}
-                                        height={26}
-                                        width={26}
+                                        src={ image }
+                                        height={ 26 }
+                                        width={ 26 }
                                         // layout="fixed"
                                         rounded="md"
                                     />
-                                )}
+                                ) }
                             </Box>
                             <VStack
-                                align={'start'}
+                                align={ 'start' }
                                 justify="flex-start"
-                                spacing={1}
+                                spacing={ 1 }
                                 maxW="lg"
                                 h="100%"
                             >
-                                <VStack align={'start'} flexGrow={1} spacing={0}>
-                                    <Text fontWeight="bold" fontSize="md" noOfLines={2}>{name}</Text>
-                                    <Text fontSize="sm">{description}</Text>
+                                <VStack align={ 'start' } flexGrow={ 1 } spacing={ 0 }>
+                                    <Text fontWeight="bold" fontSize="md" noOfLines={ 2 }>{ name }</Text>
+                                    <Text fontSize="sm">{ description }</Text>
                                 </VStack>
                             </VStack>
                         </HStack>
@@ -178,33 +178,33 @@ export const SkeletonGitCard = (props: CardNumProps) => {
     const bgColor = useColorModeValue('gray.200', 'cyan.200')
     return (
         <>
-            {cards.map((id) => (
+            { cards.map((id) => (
                 <Box
-                    bg={bgColor}
-                    key={id}
-                    borderWidth={'1px'}
-                    m={2}
-                    p={2}
+                    bg={ bgColor }
+                    key={ id }
+                    borderWidth={ '1px' }
+                    m={ 2 }
+                    p={ 2 }
                     rounded="lg">
-                    <Stack isInline justifyContent={'space-between'}>
+                    <Stack isInline justifyContent={ 'space-between' }>
                         <Box width="100%">
-                            <HStack isInline justifyContent={'space-between'}>
+                            <HStack isInline justifyContent={ 'space-between' }>
                                 <Skeleton height="14px" width="40%" />
                                 <Skeleton height="14px" width="20%" />
                             </HStack>
-                            <VStack align={'start'} marginTop={1}>
+                            <VStack align={ 'start' } marginTop={ 1 }>
                                 <Skeleton height="8px" width="30%" />
                             </VStack>
-                            <Box marginTop={2}>
+                            <Box marginTop={ 2 }>
                                 <Skeleton height="8px" width="100%" />
-                                <Stack spacing={2} mt={1} isInline alignItems={'center'}>
+                                <Stack spacing={ 2 } mt={ 1 } isInline alignItems={ 'center' }>
                                     <Skeleton height="8px" width="80%" />
                                 </Stack>
                             </Box>
                         </Box>
                     </Stack>
                 </Box>
-            ))}
+            )) }
         </>
     )
 }
@@ -230,73 +230,73 @@ export const GitCard = (props: GitLiveProps) => {
     }
 
     return (
-        <MotionBox whileHover={{ y: 10 }}>
+        <MotionBox whileHover={ { y: 10 } }>
             <Box
-                borderWidth={'1px'}
-                p={2}
-                rounded={'xl'}
-                mt={2}
-                ml={2}
-                _hover={{
+                borderWidth={ '1px' }
+                p={ 2 }
+                rounded={ 'xl' }
+                mt={ 2 }
+                ml={ 2 }
+                _hover={ {
                     shadow: 'md',
                     textDecoration: 'none'
-                }}
+                } }
             >
-                <VStack overflow={'hidden'} align={'start'} spacing={1}>
-                    <VStack spacing={1} align={'start'} w="100%">
+                <VStack overflow={ 'hidden' } align={ 'start' } spacing={ 1 }>
+                    <VStack spacing={ 1 } align={ 'start' } w="100%">
                         <Flex
-                            onClick={((e) => handleLink(e, url))}
-                            justifyContent={'space-between'}
+                            onClick={ ((e) => handleLink(e, url)) }
+                            justifyContent={ 'space-between' }
                             width="100%">
                             <Tooltip hasArrow label="Github link" placement="top">
-                                <HStack cursor={'pointer'}>
+                                <HStack cursor={ 'pointer' }>
                                     <Text fontSize="sm"
-                                        noOfLines={1}
+                                        noOfLines={ 1 }
                                         fontWeight="600"
                                         align="left">
-                                        {title}
+                                        { title }
                                     </Text>
                                 </HStack>
                             </Tooltip>
                             <HStack
                                 cursor="pointer"
-                                onClick={((e) => handleLink(e, url))}
+                                onClick={ ((e) => handleLink(e, url)) }
                             >
-                                {forks_count && (
-                                    <Box _hover={{ color: 'blue.500' }}>
-                                        <Icon as={BiGitRepoForked} fontSize="sm" boxSize={'0.9em'} />
-                                        <Box as={'span'} ml={1} fontSize="sm">
-                                            {forks_count}
+                                { forks_count && (
+                                    <Box _hover={ { color: 'blue.500' } }>
+                                        <Icon as={ BiGitRepoForked } fontSize="sm" boxSize={ '0.9em' } />
+                                        <Box as={ 'span' } ml={ 1 } fontSize="sm">
+                                            { forks_count }
                                         </Box>
                                     </Box>
-                                )}
-                                {stargazers_count && (
-                                    <Box _hover={{ color: 'blue.500' }}>
-                                        <Icon as={BiStar} fontSize="sm" boxSize={'0.9em'} />
-                                        <Box as={'span'} ml={1} fontSize="sm">
-                                            {stargazers_count}
+                                ) }
+                                { stargazers_count && (
+                                    <Box _hover={ { color: 'blue.500' } }>
+                                        <Icon as={ BiStar } fontSize="sm" boxSize={ '0.9em' } />
+                                        <Box as={ 'span' } ml={ 1 } fontSize="sm">
+                                            { stargazers_count }
                                         </Box>
                                     </Box>
-                                )}
+                                ) }
                             </HStack>
                         </Flex>
                     </VStack>
-                    <Box height={79}>
-                        {language && (
-                            <Flex justifyContent={'space-between'} width="100%">
+                    <Box height={ 79 }>
+                        { language && (
+                            <Flex justifyContent={ 'space-between' } width="100%">
                                 <Box>
-                                    <HStack spacing={1}>
-                                        <Tag size="sm" colorScheme={getTagColor(language)}>
-                                            <Text fontSize={['0.55rem', 'inherit', 'inherit']}>
-                                                {language}
+                                    <HStack spacing={ 1 }>
+                                        <Tag size="sm" colorScheme={ getTagColor(language) }>
+                                            <Text fontSize={ ['0.55rem', 'inherit', 'inherit'] }>
+                                                { language }
                                             </Text>
                                         </Tag>
                                     </HStack>
                                 </Box>
                             </Flex>
-                        )}
-                        <Text fontSize="sm" align={'left'}>
-                            {description}
+                        ) }
+                        <Text fontSize="sm" align={ 'left' }>
+                            { description }
                         </Text>
                     </Box>
                 </VStack>
@@ -306,57 +306,61 @@ export const GitCard = (props: GitLiveProps) => {
 }
 
 export const ProjectCard = (props: ProjectProps) => {
-    const { name, description, publish, image, skills } = props
+    const { name, description, publish, image, skills, link } = props
 
     const { data, loading } = usePalette(image)
     return (
-        <MotionBox variant={item}>
-            <MotionBox whileHover={{ y: -5 }}>
-                {/* <NextLink href={link} passHref> */}
-                {/* <Link isExternal> */}
-                <HStack
-                    w="100%"
-                    p={4}
-                    bg={useColorModeValue('white', 'gray.800')}
-                    borderColor={useColorModeValue('gray.100', 'gray.700')}
-                    rounded="xl"
-                    borderWidth="1px"
-                    textAlign="left"
-                    align="start"
-                    spacing={4}
-                    _hover={{ shadow: 'md' }}
-                >
-                    <VStack
-                        align={'start'}
-                        justify="flex-start"
-                        spacing={1}
-                        maxW="lg"
-                        h="100%"
-                    >
+        <MotionBox variant={ item }>
+            <MotionBox whileHover={ { y: -5 } }>
+                <NextLink href={ link } passHref>
+                    <Link
+                        _hover={ {
+                            textDecoration: 'none'
+                        } }>
+                        <HStack
+                            w="100%"
+                            p={ 4 }
+                            bg={ useColorModeValue('white', 'gray.800') }
+                            borderColor={ useColorModeValue('gray.100', 'gray.700') }
+                            rounded="xl"
+                            borderWidth="1px"
+                            textAlign="left"
+                            align="start"
+                            spacing={ 4 }
+                            _hover={ { shadow: 'md' } }
+                        >
+                            <VStack
+                                align={ 'start' }
+                                justify="flex-start"
+                                spacing={ 1 }
+                                maxW="lg"
+                                h="100%"
+                                height={ '30vh' }
+                            >
 
-                        <Image
-                            h={250}
-                            w={327}
-                            src={image}
-                            alt={name}
-                            fallbackSrc={"/assets/images/no-image.jpg"}
-                        />
-                        <VStack align={'start'} flexGrow={1} spacing={0}>
-                            <Text fontWeight="bold" fontSize="md" noOfLines={2}>{name}</Text>
-                            <Text fontSize="small">&lt;{publish}&gt;</Text>
-                            <Text fontSize="sm">{description}</Text>
-                            <Tags
-                                tags={skills}
-                                interactive={false}
-                                tagProps={{
-                                    padding: '0 10px'
-                                }}
-                            />
-                        </VStack>
-                    </VStack>
-                </HStack>
-                {/* </Link> */}
-                {/* </NextLink> */}
+                                <Image
+                                    h={ 40 }
+                                    w={ '100%' }
+                                    src={ image }
+                                    alt={ name }
+                                    fallbackSrc={ "/assets/images/no-image.jpg" }
+                                />
+                                <VStack align={ 'start' } flexGrow={ 1 } spacing={ 0 }>
+                                    <Text fontWeight="bold" fontSize="md" noOfLines={ 2 }>{ name }</Text>
+                                    <Text fontSize="small">&lt;{ publish }&gt;</Text>
+                                    <Text fontSize="sm">{ description }</Text>
+                                    <Tags
+                                        tags={ skills }
+                                        interactive={ false }
+                                        tagProps={ {
+                                            padding: '0 10px'
+                                        } }
+                                    />
+                                </VStack>
+                            </VStack>
+                        </HStack>
+                    </Link>
+                </NextLink>
             </MotionBox>
         </MotionBox>
     )
