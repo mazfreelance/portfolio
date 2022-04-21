@@ -1,4 +1,5 @@
 import {
+    Badge,
     Box,
     Flex,
     Heading,
@@ -306,7 +307,7 @@ export const GitCard = (props: GitLiveProps) => {
 }
 
 export const ProjectCard = (props: ProjectProps) => {
-    const { name, description, publish, image, skills, link } = props
+    const { name, description, publish, image, link } = props
 
     const { data, loading } = usePalette(image)
     return (
@@ -335,27 +336,18 @@ export const ProjectCard = (props: ProjectProps) => {
                                 spacing={ 1 }
                                 maxW="lg"
                                 h="100%"
-                                height={ '30vh' }
+                                height={ 'auto' }
                             >
-
                                 <Image
-                                    h={ 40 }
-                                    w={ '100%' }
-                                    src={ image }
-                                    alt={ name }
-                                    fallbackSrc={ "/assets/images/no-image.jpg" }
+                                    h={40}
+                                    w={'100%'}
+                                    src={image}
+                                    alt={name}
+                                    fallbackSrc={"/assets/images/no-image.jpg"}
                                 />
                                 <VStack align={ 'start' } flexGrow={ 1 } spacing={ 0 }>
-                                    <Text fontWeight="bold" fontSize="md" noOfLines={ 2 }>{ name }</Text>
-                                    <Text fontSize="small">&lt;{ publish }&gt;</Text>
+                                    <Text fontWeight="bold" fontSize="md" noOfLines={2}>{name} <Badge colorScheme={'cyan'}>{publish}</Badge></Text>
                                     <Text fontSize="sm">{ description }</Text>
-                                    <Tags
-                                        tags={ skills }
-                                        interactive={ false }
-                                        tagProps={ {
-                                            padding: '0 10px'
-                                        } }
-                                    />
                                 </VStack>
                             </VStack>
                         </HStack>

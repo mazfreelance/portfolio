@@ -24,7 +24,7 @@ const MyAccount = {
     {
       url: "https://instagram.com/maz93je",
       label: "Instagram",
-      type: "purple",
+      type: "red",
       icon: <GrInstagram />,
     },
     {

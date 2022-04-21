@@ -62,7 +62,7 @@ const ContactUs = ({ ...props }) => {
                 <Text display={ ['none', 'none', 'block'] }>Contact</Text>
             </Button>
 
-            <Drawer placement="top" isOpen={ isOpen } onClose={ onClose } size={ size }>
+            <Drawer placement="right" isOpen={ isOpen } onClose={ onClose } size={ size }>
                 <DrawerOverlay />
                 <DrawerContent>
                     <Tooltip label={ 'close' }>

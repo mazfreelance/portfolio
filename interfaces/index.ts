@@ -89,6 +89,5 @@ export interface ProjectProps {
   publish: string;
   image?: string;
   filter?: string[];
-  skills: string[];
   link: string;
 }
