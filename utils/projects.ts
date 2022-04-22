@@ -26,6 +26,14 @@ export const projects: ProjectProps[] = [
         link: '/projects/fimm'
     },
     {
+        name: 'Republic GG v4.0',
+        description: 'e-Commerce systems',
+        publish: '2021 - unrelease',
+        image: '/assets/images/projects/rgg.png',
+        filter: ['webapp', 'api', 'ecommerce'],
+        link: '/projects/rgg4.0'
+    },
+    {
         name: 'Republic GG',
         description: 'e-Commerce systems',
         publish: '2019',
@@ -92,7 +100,7 @@ export const ProjectDetails = {
             publish: '2021',
             status: true,
             link: 'https://kolstore.co',
-            skills: ['PHP', 'Laravel', 'JavaScript', 'VueJS'],
+            skills: ['PHP', 'Lumen', 'JavaScript', 'VueJS', 'TailwindCSS'],
             application: 'Order, Merchant, Admin, API',
             latest: 'On going development',
             gallery: [
@@ -160,7 +168,7 @@ export const ProjectDetails = {
             publish: '2021',
             status: true,
             link: 'https://www.fimm.com.my/',
-            skills: ['HTML', 'PHP', 'Laravel', 'JavaScript', 'VueJS'],
+            skills: ['HTML', 'PHP', 'Laravel', 'JavaScript', 'VueJS', 'Bootstrap 4'],
             application: 'Web, API',
             latest: '30th October 2021',
             clients: [
@@ -175,27 +183,92 @@ export const ProjectDetails = {
             ]
         },
         {
+            slug: 'rgg4.0',
+            name: 'Republic GG v4.0',
+            description: 'Enhancement new technology for Republic GG',
+            publish: '2021 - unrelease',
+            status: true,
+            link: 'https://republic.gg',
+            skills: ['PHP', 'Laravel 8', 'JavaScript', 'NuxtJS', 'Bootstrap 4', 'Sass'],
+            application: 'Web, API',
+            latest: '28th October 2021',
+            clients: [
+                {
+                    name: 'Ionnex Sdn Bhd',
+                    image: '/assets/images/logos/ionnex.png'
+                }
+            ]
+        },
+        {
             slug: 'rgg',
             name: 'Republic GG',
             description: 'The one-stop gaming command centre that offers the largest games credit reload service in Malaysia and the solution to your gaming needs.',
             publish: '2019',
             status: true,
             link: 'https://republic.gg',
-            skills: ['HTML', 'Sass', 'PHP', 'Yii2', 'Laravel', 'Bootstrap 4', 'JavaScript'],
+            skills: ['HTML', 'Sass', 'PHP', 'Yii2', 'Laravel 5.6', 'Bootstrap 4', 'JavaScript'],
             application: 'Web, Admin, Report Dashboard, API',
             latest: '31st March 2022',
             gallery: [
                 {
-                    original: 'https://picsum.photos/id/1018/1000/600/',
-                    thumbnail: 'https://picsum.photos/id/1018/250/150/',
+                    original: '/assets/images/projects/gallery/rgg/version1-1.png',
+                    thumbnail: '/assets/images/projects/gallery/rgg/version1-1.png',
                 },
                 {
-                    original: 'https://picsum.photos/id/1015/1000/600/',
-                    thumbnail: 'https://picsum.photos/id/1015/250/150/',
+                    original: '/assets/images/projects/gallery/rgg/version1-2.png',
+                    thumbnail: '/assets/images/projects/gallery/rgg/version1-2.png',
                 },
                 {
-                    original: 'https://picsum.photos/id/1019/1000/600/',
-                    thumbnail: 'https://picsum.photos/id/1019/250/150/',
+                    original: '/assets/images/projects/gallery/rgg/version1-3.png',
+                    thumbnail: '/assets/images/projects/gallery/rgg/version1-3.png',
+                },
+                {
+                    original: '/assets/images/projects/gallery/rgg/version1-4.png',
+                    thumbnail: '/assets/images/projects/gallery/rgg/version1-4.png',
+                },
+                {
+                    original: '/assets/images/projects/gallery/rgg/version2-1.png',
+                    thumbnail: '/assets/images/projects/gallery/rgg/version2-1.png',
+                },
+                {
+                    original: '/assets/images/projects/gallery/rgg/version2-2.png',
+                    thumbnail: '/assets/images/projects/gallery/rgg/version2-2.png',
+                },
+                {
+                    original: '/assets/images/projects/gallery/rgg/version2-3.png',
+                    thumbnail: '/assets/images/projects/gallery/rgg/version2-3.png',
+                },
+                {
+                    original: '/assets/images/projects/gallery/rgg/version2-4.png',
+                    thumbnail: '/assets/images/projects/gallery/rgg/version2-4.png',
+                },
+                {
+                    original: '/assets/images/projects/gallery/rgg/version2-5.png',
+                    thumbnail: '/assets/images/projects/gallery/rgg/version2-5.png',
+                },
+                {
+                    original: '/assets/images/projects/gallery/rgg/version3-1.png',
+                    thumbnail: '/assets/images/projects/gallery/rgg/version3-1.png',
+                },
+                {
+                    original: '/assets/images/projects/gallery/rgg/version3-2.png',
+                    thumbnail: '/assets/images/projects/gallery/rgg/version3-2.png',
+                },
+                {
+                    original: '/assets/images/projects/gallery/rgg/version3-3.png',
+                    thumbnail: '/assets/images/projects/gallery/rgg/version3-3.png',
+                },
+                {
+                    original: '/assets/images/projects/gallery/rgg/version3-4.png',
+                    thumbnail: '/assets/images/projects/gallery/rgg/version3-4.png',
+                },
+                {
+                    original: '/assets/images/projects/gallery/rgg/version3-5.png',
+                    thumbnail: '/assets/images/projects/gallery/rgg/version3-5.png',
+                },
+                {
+                    original: '/assets/images/projects/gallery/rgg/version3-6.png',
+                    thumbnail: '/assets/images/projects/gallery/rgg/version3-6.png',
                 },
             ],
             clients: [
@@ -238,25 +311,29 @@ export const ProjectDetails = {
         {
             slug: 'workshire',
             name: 'Workshire',
-            description: 'Job portal systems',
+            description: 'An online job board that helps applicants find jobs and aids employers in their quest to locate ideal candidates.',
             publish: '2018',
             status: false,
             link: 'https://workshire.com.my',
-            skills: ['HTML', 'CSS', 'PHP', 'Laravel'],
+            skills: ['HTML', 'CSS', 'PHP', 'Laravel', 'Bootstrap 3'],
             latest: '-',
             gallery: [
                 {
-                    original: 'https://picsum.photos/id/1018/1000/600/',
-                    thumbnail: 'https://picsum.photos/id/1018/250/150/',
+                    original: '/assets/images/projects/gallery/workshire/version1.png',
+                    thumbnail: '/assets/images/projects/gallery/workshire/version1.png'
                 },
                 {
-                    original: 'https://picsum.photos/id/1015/1000/600/',
-                    thumbnail: 'https://picsum.photos/id/1015/250/150/',
+                    original: '/assets/images/projects/gallery/workshire/version1-1.png',
+                    thumbnail: '/assets/images/projects/gallery/workshire/version1-1.png'
                 },
                 {
-                    original: 'https://picsum.photos/id/1019/1000/600/',
-                    thumbnail: 'https://picsum.photos/id/1019/250/150/',
+                    original: '/assets/images/projects/gallery/workshire/version2.png',
+                    thumbnail: '/assets/images/projects/gallery/workshire/version2.png'
                 },
+                {
+                    original: '/assets/images/projects/gallery/workshire/version2-1.png',
+                    thumbnail: '/assets/images/projects/gallery/workshire/version2-1.png'
+                }
             ],
             clients: [
                 {

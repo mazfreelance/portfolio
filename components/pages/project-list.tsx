@@ -51,9 +51,9 @@ const ProjectLists = ({ ...props }) => {
                             _selected={{
                                 color: useColorModeValue('cyan.800', 'gray.900')
                             }}
-                            mx={1}
+                            mx={['2', 'auto', '2', 'auto']}
                             px={4}
-                            my={[1, 1, 0]}
+                            my={1}
                             key={idx}
                         >
                             <Icon as={tab?.icon} />
@@ -64,7 +64,7 @@ const ProjectLists = ({ ...props }) => {
                 </TabList>
                 <TabPanels>
                     <TabPanel>
-                        <SimpleGrid columns={[1, 1, 3]} spacing={4} mt={3}>
+                        <SimpleGrid columns={[1, 2, 3]} spacing={4} mt={3}>
                             {projects.map((item, idx) => (
                                 <ProjectCard
                                     name={item.name}
@@ -76,7 +76,7 @@ const ProjectLists = ({ ...props }) => {
                         </SimpleGrid>
                     </TabPanel>
                     <TabPanel>
-                        <SimpleGrid columns={[1, 1, 3]} spacing={4} mt={3}>
+                        <SimpleGrid columns={[1, 2, 3]} spacing={4} mt={3}>
                             {projects.map((item, idx) => (
                                 <ProjectCard
                                     name={item.name}
@@ -88,7 +88,7 @@ const ProjectLists = ({ ...props }) => {
                         </SimpleGrid>
                     </TabPanel>
                     <TabPanel>
-                        <SimpleGrid columns={[1, 1, 3]} spacing={4} mt={3}>
+                        <SimpleGrid columns={[1, 2, 3]} spacing={4} mt={3}>
                             {projects.map((item, idx) => (
                                 <ProjectCard
                                     name={item.name}
@@ -100,7 +100,7 @@ const ProjectLists = ({ ...props }) => {
                         </SimpleGrid>
                     </TabPanel>
                     <TabPanel>
-                        <SimpleGrid columns={[1, 1, 3]} spacing={4} mt={3}>
+                        <SimpleGrid columns={[1, 2, 3]} spacing={4} mt={3}>
                             {projects.map((item, idx) => (
                                 <ProjectCard
                                     name={item.name}
@@ -112,7 +112,7 @@ const ProjectLists = ({ ...props }) => {
                         </SimpleGrid>
                     </TabPanel>
                     <TabPanel>
-                        <SimpleGrid columns={[1, 1, 3]} spacing={4} mt={3}>
+                        <SimpleGrid columns={[1, 2, 3]} spacing={4} mt={3}>
                             {projects.map((item, idx) => (
                                 <ProjectCard
                                     name={item.name}
