@@ -12,10 +12,6 @@ const Meta = (props: MetaProps): JSX.Element => {
             <meta property="og:image" content={props.image ? props.image : '/logo512.png'} />
             <meta property="og:description" content={props.description} />
             <meta property="og:site_name" content={props.title} />
-            <meta name="twitter:title" content={'maz93je'} />
-            <meta name="twitter:description" content={props.description} />
-            <meta name="twitter:image" content={props.image ? props.image : '/logo512.png'} />
-            <meta name="twitter:card" content="summary_large_image" />
             <title>
                 {props.title.includes('Azmin') ? props.title : props.title.concat(' | Mohd Azmin')}
             </title>
