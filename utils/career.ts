@@ -19,8 +19,8 @@ export const career: CareerEducationProps[] = [
     },
     {
         title: 'BATC Developemt Bhd',
-        alt: 'Inx image',
-        role: 'Web Developer (Internship)',
+        alt: 'BATC image',
+        role: 'IT Executive cum Web Developer (Internship)',
         skills: ['php', 'javascript', 'cpanel'],
         period: 'June 2016 - Dec 2016',
         logo: '/assets/images/logos/batc-dev.png',

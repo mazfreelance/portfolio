@@ -35,14 +35,14 @@ export const skillsArray = [
         image: '/assets/images/skills/typescript.png',
     },
     {
-        name: 'Html5',
+        name: 'HTML5',
         description: 'Web layouts',
         link: 'https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5',
         type: 'development',
         image: '/assets/images/skills/html-5.png',
     },
     {
-        name: 'Css3',
+        name: 'CSS3',
         description: 'Web design',
         link: 'https://developer.mozilla.org/en-US/docs/Web/CSS',
         type: 'design',
@@ -63,7 +63,7 @@ export const skillsArray = [
         image: '/assets/images/skills/tailwind.png',
     },
     {
-        name: 'MySql',
+        name: 'MySQL',
         description: 'Database',
         link: 'https://www.mysql.com/',
         type: 'database',
@@ -95,7 +95,7 @@ export const skillsArray = [
         description: 'Web Hosting',
         link: 'https://mediatemple.net/',
         type: 'devops',
-        image: '/assets/images/skills/media-temple.png',
+        image: '/assets/images/skills/mtmedia.png',
     },
     {
         name: 'Apache',
@@ -125,4 +125,11 @@ export const skillsArray = [
         type: 'devops',
         image: '/assets/images/skills/tencent-cloud.png',
     },
+    {
+        name: 'cPanel',
+        description: 'Web Hosting',
+        link: 'https://cpanel.net',
+        type: 'devops',
+        image: '/assets/images/skills/cpanel.png'
+    }
 ]

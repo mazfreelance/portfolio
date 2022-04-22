@@ -304,7 +304,7 @@ export const ProjectDetails = {
             clients: [
                 {
                     name: 'Talent Suites Sdn Bhd',
-                    image: '/assets/images/logos/talent-suites.png'
+                    image: '/assets/images/logos/talent-suites-white-background.png'
                 }
             ]
         },
@@ -338,7 +338,7 @@ export const ProjectDetails = {
             clients: [
                 {
                     name: 'Talent Suites Sdn Bhd',
-                    image: '/assets/images/logos/talent-suites.png'
+                    image: '/assets/images/logos/talent-suites-white-background.png'
                 }
             ]
         },
@@ -354,7 +354,7 @@ export const ProjectDetails = {
             clients: [
                 {
                     name: 'Talent Suites Sdn Bhd',
-                    image: '/assets/images/logos/talent-suites.png'
+                    image: '/assets/images/logos/talent-suites-white-background.png'
                 }
             ]
         },
@@ -426,7 +426,8 @@ export const ProjectDetails = {
                     name: 'Universiti Teknologi MARA (UiTM)',
                     image: '/assets/images/logos/UiTM.png'
                 }
-            ]
+            ],
+            source: 'https://gitlab.com/HeroCoder/FYPUiTM'
         },
         {
             slug: 'hms',
@@ -442,7 +443,8 @@ export const ProjectDetails = {
                     name: 'Universiti Teknologi MARA (UiTM)',
                     image: '/assets/images/logos/UiTM.png'
                 }
-            ]
+            ],
+            source: 'https://gitlab.com/HeroCoder/hotelsystem'
         }
     ]
 }
