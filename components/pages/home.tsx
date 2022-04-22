@@ -4,9 +4,6 @@ import {
     Divider,
     Flex,
     Heading,
-    Icon,
-    Skeleton,
-    Spacer,
     Stack,
     Text,
     VStack
@@ -16,10 +13,10 @@ import { PageSliderFade, StaggerChildren } from "components/animations/page-tran
 import { Card } from "components/layouts/shared/card"
 import Header from "components/layouts/shared/header"
 import Section from "components/layouts/shared/section"
-import NextLink from "next/link"
 import { FcAbout, FcBriefcase, FcGraduationCap } from "react-icons/fc";
 import { career } from "utils/career"
 import { education } from "utils/education"
+import styles from "../../styles/Home.module.scss"
 
 const Home: React.FC = (props) => {
 
@@ -31,7 +28,8 @@ const Home: React.FC = (props) => {
                     emoji="👩🏻‍💻"
                     p={3}
                     mb={6}
-                    bgColor={'blue.200'}>
+                    fontSize={'0.7em'}
+                    className={styles.typewriter}>
                     Hi, I&apos;m Full Stack Developer from Malaysia
                 </Header>
             </MotionBox>
@@ -60,7 +58,7 @@ const Home: React.FC = (props) => {
                             size={'xl'}
                             showBorder={true}
                             borderColor={'lightskyblue'}
-                            src={''} />
+                            src={'/assets/images/azmin.jpg'} />
                     </MotionBox>
                 </MotionBox>
                 <MotionFlex
@@ -117,8 +115,7 @@ const Home: React.FC = (props) => {
                                     </Stack>
                                 </Flex>
                             </Heading>
-                            <Text
-                                textAlign={'justify'}>
+                            <Text textAlign={'justify'}>
                                 Hi👋, I am Azmin and a web developer based in Kuala Lumpur, Malaysia with a passion for building digital services. I have 5+ years working experience as a Web Developer for multiple company as a full time and a freelance. I love working in a team and sharing new knowledge. You can free around on my page to know more about me. Thanks for visiting this page. 🤙
                             </Text>
                         </Section>
