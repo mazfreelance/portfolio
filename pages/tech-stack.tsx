@@ -105,6 +105,7 @@ const TechStack: NextPage<SkillProps> = ({ skills }) => {
                                         }}
                                         mx={1}
                                         px={4}
+                                        my={[1, 1, 0]}
                                         onClick={() => filterSkill(tab.filter)}
                                         key={index}>
                                         <Icon as={tab.icon} />

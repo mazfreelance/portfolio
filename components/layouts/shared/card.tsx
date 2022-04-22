@@ -339,7 +339,7 @@ export const ProjectCard = (props: ProjectProps) => {
                                 height={ ['auto', '35vh', '35vh'] }
                             >
                                 <Image
-                                    h={40}
+                                    h={'auto'}
                                     w={'100%'}
                                     src={image}
                                     alt={name}

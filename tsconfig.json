@@ -17,10 +17,10 @@
     "paths": {
       "*": ["/*"],
       "components/*": ["components/*"],
-      "lib/*": ["lib/*"],
+      "library/*": ["library/*"],
       "utils/*": ["utils/*"],
       "pages/*": ["pages/*"],
-      "config/*": ["config/*"],
+      "configs/*": ["configs/*"],
       "interfaces/*": ["interfaces/*"],
       "public/*": ["public/*"],
     }
