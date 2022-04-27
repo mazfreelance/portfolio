@@ -6,10 +6,11 @@ const Meta = (props: MetaProps): JSX.Element => {
         <Head>
             <meta name="viewport" content="width=device-width, initial-scale=1" />
             <meta charSet="utf-8" />
+            <meta name="author" content={ props.author }/>
             <meta name="keywords" content={props.keywords} />
             <meta name="description" content={props.description} />
             <meta property="og:title" content={props.title} />
-            <meta property="og:image" content={props.image ? props.image : '/logo512.png'} />
+            <meta property="og:image" content={props.image ? props.image : '/logo.png'} />
             <meta property="og:description" content={props.description} />
             <meta property="og:site_name" content={props.title} />
             <title>
@@ -21,9 +22,11 @@ const Meta = (props: MetaProps): JSX.Element => {
 }
 
 Meta.defaultProps = {
-    'title': 'Mohd Azmin | Web Developer',
+    'author': 'Mohd Azmin',
+    'title': 'Mohd Azmin | Full Stack Developer',
     'description': 'I am Full Stack Developer. Love to find new technology and knowledge',
-    'keywords': 'mohdazmin, mohd azmin, web developer, full stack developer, backend developer'
+    'keywords': 'mohdazmin, mohd azmin, web developer, full stack developer, backend developer',
+    'image': 'https://mohdazmin.com/logo.png'
 }
 
 export default Meta

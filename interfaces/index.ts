@@ -38,6 +38,7 @@ export type DropdownLinkProps = {
 }
 
 export type MetaProps = {
+  author?: string;
   title?: string;
   description?: string;
   keywords?: string;

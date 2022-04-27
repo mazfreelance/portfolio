@@ -17,12 +17,13 @@
     "paths": {
       "*": ["/*"],
       "components/*": ["components/*"],
-      "library/*": ["library/*"],
-      "utils/*": ["utils/*"],
-      "pages/*": ["pages/*"],
       "configs/*": ["configs/*"],
       "interfaces/*": ["interfaces/*"],
+      "library/*": ["library/*"],
+      "pages/*": ["pages/*"],
       "public/*": ["public/*"],
+      "styles/*": ["styles/*"],
+      "utils/*": ["utils/*"],
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "configs/my-account.js", "components/layouts/shared/section.tsx", "components/layouts/shared/header.tsx"],

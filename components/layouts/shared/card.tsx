@@ -335,8 +335,7 @@ export const ProjectCard = (props: ProjectProps) => {
                                 justify="flex-start"
                                 spacing={ 1 }
                                 maxW="lg"
-                                h="100%"
-                                height={ ['auto', '35vh', '35vh'] }
+                                height={ ['auto', 'auto', 'auto', '25vh'] }
                             >
                                 <Image
                                     h={'auto'}

@@ -45,7 +45,7 @@ export const projects: ProjectProps[] = [
         name: 'Attendance Management',
         description: 'Management systems',
         publish: '2018',
-        image: '/assets/images/projects/ams.png',
+        image: '/assets/images/projects/ams.PNG',
         filter: ['webapp'],
         link: '/projects/ams'
     },
@@ -75,7 +75,7 @@ export const projects: ProjectProps[] = [
     },
     {
         name: 'IJaC Booking Management',
-        description: 'Booking systems for Final Year Project',
+        description: 'Booking systems',
         publish: '2016',
         image: null,
         filter: ['webapp'],
