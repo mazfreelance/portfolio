@@ -16,7 +16,7 @@ const Meta = (props: MetaProps): JSX.Element => {
             <title>
                 {props.title.includes('Azmin') ? props.title : props.title.concat(' | Mohd Azmin')}
             </title>
-            <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+            <link rel="icon" type="image/x-icon" href="/favicon-48x48.ico" />
         </Head>
     )
 }
