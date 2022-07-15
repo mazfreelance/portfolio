@@ -6,7 +6,7 @@ export const career: CareerEducationProps[] = [
         alt: 'Inx image',
         role: 'Mid/Senior Web Developer',
         skills: ['php', 'laravel', 'yii2', 'typescript', 'javascript', 'vue', 'react', 'tencent cloud'],
-        period: '2019 - Present',
+        period: 'Jan 2019 - July 2022',
         logo: '/assets/images/logos/ionnex.png',
     },
     {
@@ -14,7 +14,7 @@ export const career: CareerEducationProps[] = [
         alt: 'TS image',
         role: 'Web Developer',
         skills: ['php', 'laravel', 'javascript', 'jQuery', 'media temple'],
-        period: '2017 - 2018',
+        period: 'Apr 2017 - Dec 2018',
         logo: '/assets/images/logos/talent-suites.png',
     },
     {
