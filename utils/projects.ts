@@ -102,7 +102,7 @@ export const ProjectDetails = {
             link: 'https://kolstore.co',
             skills: ['PHP', 'Lumen', 'JavaScript', 'VueJS', 'TailwindCSS'],
             application: 'Order, Merchant, Admin, API',
-            latest: 'On going development',
+            latest: '12th July 2022',
             gallery: [
                 {
                     original: '/assets/images/projects/gallery/kolstore/order-1000x600.png',
@@ -153,7 +153,7 @@ export const ProjectDetails = {
             link: 'https://nimfa.live',
             skills: ['PHP', 'Laravel'],
             application: 'API',
-            latest: 'On going development',
+            latest: 'Jan 2022',
             clients: [
                 {
                     name: 'Ionnex Sdn Bhd',
