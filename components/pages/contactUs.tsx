@@ -40,17 +40,11 @@ const ContactUs = ({ ...props }) => {
         onOpen()
     }
 
-    const form = useFormik({
-        initialValues: {
-            name: '',
-            email: '',
-            subject: '',
-            message: ''
-        },
-        onSubmit: (values) => {
-            alert(JSON.stringify(values, null, 2))
+    const handleReset = (resetForm) => {
+        if (window.confirm('Reset?')) {
+            resetForm();
         }
-    })
+    };
 
     return (
         <>
@@ -76,11 +70,9 @@ const ContactUs = ({ ...props }) => {
                             subject: '',
                             message: ''
                         } }
-                        onSubmit={ (values) => {
+                        onSubmit={ (values, { resetForm }) => {
                             alert(JSON.stringify(values, null, 2));
-                        } }
-                        onReset={ (values) => {
-                            console.log('values', values)
+                            resetForm()
                         } }>
                         { ({ handleSubmit, errors, touched }) => (
                             <form onSubmit={ handleSubmit }>
@@ -145,25 +137,46 @@ const ContactUs = ({ ...props }) => {
                                             </FormControl>
                                         </Box>
                                         <Box>
-                                            <FormControl>
+                                            <FormControl isInvalid={ !!errors.subject && touched.subject }>
                                                 <FormLabel fontStyle={ 'italic' } htmlFor="subject">Subject</FormLabel>
-                                                <Input
+                                                <Field
+                                                    as={ Input }
                                                     id={ 'subject' }
                                                     name={ 'subject' }
-                                                    placeholder="Please enter subject"
+                                                    placeholder="Please enter your subject"
                                                     variant="flushed"
+                                                    validate={ (value) => {
+                                                        let error;
+
+                                                        if (value.length === 0) {
+                                                            error = "Subject is required.";
+                                                        }
+
+                                                        return error;
+                                                    } }
                                                 />
                                                 <FormErrorMessage>{ errors.subject }</FormErrorMessage>
                                             </FormControl>
                                         </Box>
                                         <Box>
-                                            <FormControl>
+                                            <FormControl isInvalid={ !!errors.message && touched.message }>
                                                 <FormLabel fontStyle={ 'italic' } htmlFor="message">Message</FormLabel>
-                                                <Textarea
+                                                <Field
+                                                    as={ Textarea }
                                                     id={ 'message' }
                                                     name={ 'message' }
-                                                    placeholder="Please enter message"
-                                                    variant="flushed" />
+                                                    placeholder="Please enter your message"
+                                                    variant="flushed"
+                                                    validate={ (value) => {
+                                                        let error;
+
+                                                        if (value.length === 0) {
+                                                            error = "Message is required.";
+                                                        }
+
+                                                        return error;
+                                                    } }
+                                                />
                                                 <FormErrorMessage>{ errors.message }</FormErrorMessage>
                                             </FormControl>
                                         </Box>
