@@ -5,6 +5,7 @@ import {
     HStack,
     Button,
     IconButton,
+    Image,
     useDisclosure,
     useColorModeValue,
     Menu,
@@ -21,6 +22,7 @@ import NavLink from './navlink';
 import ContactUs from '../../pages/contactUs';
 import DropdownLink from './dropdownlink';
 import { useRouter } from 'next/router';
+import Link from 'next/link';
 
 const links = [
     // { name: 'About', path: '/about' },
@@ -69,7 +71,9 @@ export default function TopNav() {
 
                     <HStack spacing={ 8 } alignItems={ 'center' }>
                         <MotionBox whileHover={ { scale: 1.2 } } shadow="md">
-                            <NextLink href={ '/' } passHref>MohdAzmin[dot]com</NextLink>
+                            <NextLink href={ '/' } passHref>
+                            <Image src={ '/logo-ma.png' } alt='Mohd Azmin' boxSize={ '65px' }/>
+                            </NextLink>
                         </MotionBox>
                         <HStack as={ 'nav' } spacing={ 4 } display={ { base: 'none', md: 'flex' } }>
                             { links.map((link, index) => (
