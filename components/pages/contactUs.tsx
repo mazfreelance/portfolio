@@ -45,14 +45,24 @@ const ContactUs = ({ ...props }) => {
     const [buttonText, setButtonText] = useState("Send");
 
     //   Form validation state
-    const [errors, setErrors] = useState({});
+    const [errors, setErrors] = useState({
+        fullname: false,
+        email: false,
+        subject: false,
+        message: false
+    });
 
     // Setting success or failure messages states
     const [showSuccessMessage, setShowSuccessMessage] = useState(false);
     const [showFailureMessage, setShowFailureMessage] = useState(false);
 
     const handleValidation = () => {
-        let tempErrors = {};
+        let tempErrors = {
+            fullname: false,
+            email: false,
+            subject: false,
+            message: false
+        };
         let isValid = true;
 
         if (fullname.length <= 0) {
@@ -103,7 +113,6 @@ const ContactUs = ({ ...props }) => {
             if(error) {
                 setShowSuccessMessage(false);
                 setShowFailureMessage(true);
-                setErrors({})
             } else {
                 setShowSuccessMessage(true);
                 setShowFailureMessage(false);
@@ -120,7 +129,12 @@ const ContactUs = ({ ...props }) => {
         setEmail('')
         setSubject('')
         setMessage('')
-        setErrors({})
+        setErrors({
+            fullname: false,
+            email: false,
+            subject: false,
+            message: false
+        })
     };
 
     return (
