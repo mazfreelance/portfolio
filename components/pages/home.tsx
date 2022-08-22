@@ -6,6 +6,7 @@ import {
     Heading,
     Stack,
     Text,
+    useColorModeValue,
     VStack
 } from "@chakra-ui/react"
 import { MotionBox, MotionFlex } from "components/animations/motion"
@@ -29,6 +30,7 @@ const Home: React.FC = (props) => {
                     p={3}
                     mb={6}
                     fontSize={'0.7em'}
+                    color={ useColorModeValue('gray.700', 'white') }
                     className={styles.typewriter}>
                     Hi, I&apos;m Full Stack Developer from Malaysia
                 </Header>
@@ -69,11 +71,13 @@ const Home: React.FC = (props) => {
                     w={["90%", "90%", "80%"]}
                     m={["auto", "initial"]}
                     ml={["auto", "auto", 16]}>
-                    <Box flexGrow={1} textAlign={'left'} my={['0', '0', '3']}>
+                    <Box flexGrow={1} textAlign={['center', 'left']} my={['0', '0', '3']}>
                         <Heading as="h2" variant="page-title">
                             Mohd Azmin
                         </Heading>
-                        <p>Digital Creator ( Developer / Designer )</p>
+                        <Box as={'p'}>
+                            Digital Creator ( Developer / Designer )
+                        </Box>
                     </Box>
                 </MotionFlex>
             </Flex>
