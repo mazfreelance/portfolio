@@ -6,7 +6,7 @@ sendgrid.setApiKey(process.env.SENDGRID_API_KEY);
 const sendEmail = async (req: NextApiRequest, res: NextApiResponse) => {
     var data = {
         to: "maz.my.official@gmail.com", // Your email where you'll receive emails
-        from: req.body.email,
+        from: 'me@mohdazmin.com',
         subject: `(Contact from MohdAzmin[dot]com) : ${ req.body.subject }`,
         html: `<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
       <html lang="en">
@@ -26,6 +26,7 @@ const sendEmail = async (req: NextApiRequest, res: NextApiResponse) => {
         <div class="img-container" style="display: flex;justify-content: center;align-items: center;border-radius: 5px;overflow: hidden; font-family: 'helvetica', 'ui-sans';">              
               </div>
               <div class="container" style="margin-left: 20px;margin-right: 20px;">
+              <h3>You've got a new mail from ${req.body.name}, their email is: ✉️${req.body.email} </h3>
               <div style="font-size: 16px;">
               <p>Message:</p>
               <p>${ req.body.message }</p>
