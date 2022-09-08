@@ -7,6 +7,9 @@ import {
     Icon,
     Image,
     Link,
+    List,
+    ListIcon,
+    ListItem,
     Skeleton,
     Stack,
     Tag,
@@ -24,7 +27,8 @@ import {
 import { CareerEducationProps, ProjectProps } from "../../../interfaces";
 import { Tags } from "./tags";
 import { usePalette } from "react-palette";
-import { BiGitRepoForked, BiStar } from "react-icons/bi"
+import { BiGitRepoForked, BiStar, BiComment } from "react-icons/bi"
+import { VscFileCode } from "react-icons/vsc"
 import { getTagColor } from "components/theme";
 
 export const Card = (props: CareerEducationProps) => {
@@ -243,7 +247,7 @@ export const GitCard = (props: GitLiveProps) => {
                     textDecoration: 'none'
                 } }
             >
-                <VStack overflow={ 'hidden' } align={ 'start' } spacing={ 1 }>
+                <VStack overflow={ 'hidden' } align={ 'start' } spacing={ 1 } minHeight={['0vh', '20vh', '20vh', '20vh']}>
                     <VStack spacing={ 1 } align={ 'start' } w="100%">
                         <Flex
                             onClick={ ((e) => handleLink(e, url)) }
@@ -338,14 +342,14 @@ export const ProjectCard = (props: ProjectProps) => {
                                 height={ ['auto', 'auto', 'auto', '25vh'] }
                             >
                                 <Image
-                                    h={'auto'}
-                                    w={'100%'}
-                                    src={image}
-                                    alt={name}
-                                    fallbackSrc={"/assets/images/no-image.jpg"}
+                                    h={ 'auto' }
+                                    w={ '100%' }
+                                    src={ image }
+                                    alt={ name }
+                                    fallbackSrc={ "/assets/images/no-image.jpg" }
                                 />
                                 <VStack align={ 'start' } flexGrow={ 1 } spacing={ 0 }>
-                                    <Text fontWeight="bold" fontSize="md" noOfLines={2}>{name} <Badge colorScheme={'cyan'}>{publish}</Badge></Text>
+                                    <Text fontWeight="bold" fontSize="md" noOfLines={ 2 }>{ name } <Badge colorScheme={ 'cyan' }>{ publish }</Badge></Text>
                                     <Text fontSize="sm">{ description }</Text>
                                 </VStack>
                             </VStack>
@@ -353,6 +357,82 @@ export const ProjectCard = (props: ProjectProps) => {
                     </Link>
                 </NextLink>
             </MotionBox>
+        </MotionBox>
+    )
+}
+
+interface GistLiveProps {
+    title: string
+    url: string
+    comments_count: number
+}
+
+export const GistCard = (props: GistLiveProps) => {
+    const { title, comments_count, url } = props
+
+    const handleLink = (
+        e: React.MouseEvent<HTMLParagraphElement, MouseEvent>,
+        link: string
+    ) => {
+        window.open(link)
+        e.stopPropagation()
+    }
+
+    return (
+        <MotionBox whileHover={ { y: 10 } }>
+            <Box
+                borderWidth={ '1px' }
+                rounded={ 'xl' }
+                p={ 2 }
+                mt={ 2 }
+                mx={ [1, 2] }
+                _hover={ {
+                    shadow: 'md',
+                    textDecoration: 'none'
+                } }
+            >
+                <VStack overflow={ 'hidden' } align={ 'start' } spacing={ 1 } minHeight={['0vh', '0vh', '20vh', '20vh']}>
+                    <List spacing={ 3 }>
+                        <ListItem>
+                            <Flex
+                                onClick={ ((e) => handleLink(e, url)) }
+                                justifyContent={ 'space-between' }
+                                width="100%">
+                                <Tooltip hasArrow label="Gists link" placement="top">
+                                    <HStack cursor={ 'pointer' }>
+                                        <Text fontSize="md"
+                                            noOfLines={ 1 }
+                                            fontWeight="800"
+                                            align="left">
+                                            <ListIcon as={ VscFileCode } color='green.500' />
+                                            { title }
+                                        </Text>
+                                    </HStack>
+                                </Tooltip>
+                                <HStack
+                                    cursor="pointer"
+                                    onClick={ ((e) => handleLink(e, url)) }
+                                >
+                                    { comments_count && (
+                                        <Box _hover={ { color: 'blue.500' } }>
+                                            <Icon as={ BiComment } fontSize="sm" boxSize={ '0.9em' } />
+                                            <Box as={ 'span' } ml={ 1 } fontSize="sm">
+                                                { comments_count }
+                                            </Box>
+                                        </Box>
+                                    ) }
+
+                                </HStack>
+                            </Flex>
+                            <Text fontSize="md"
+                                fontWeight="100"
+                                align="left">
+                                { title }
+                            </Text>
+                        </ListItem>
+                    </List>
+                </VStack>
+            </Box>
         </MotionBox>
     )
 }
