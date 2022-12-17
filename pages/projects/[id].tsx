@@ -10,7 +10,8 @@ import {
     Stack,
     Text,
     Tooltip,
-    Image
+    Image,
+    ListIcon
 } from "@chakra-ui/react"
 import { Breadcrumb } from "../../components/layouts/shared/breadcrumb"
 import { Tags } from "../../components/layouts/shared/tags";
@@ -20,15 +21,15 @@ import { MotionBox } from "../../components/animations/motion"
 import { HiExternalLink } from "react-icons/hi"
 import { VscGlobe, VscSourceControl } from "react-icons/vsc"
 import { BsPeople } from "react-icons/bs"
-import { GrStatusInfo, GrTechnology, GrUpdate } from "react-icons/gr"
+import { GrStatusInfo, GrTechnology, GrUpdate, GrMonitor } from "react-icons/gr"
 import { GiFlatPlatform } from "react-icons/gi"
-import { MdSettingsApplications } from "react-icons/md";
+import { MdSettingsApplications, MdCheckCircle } from "react-icons/md";
 import { ProjectDetails } from '../../utils/projects'
 import { useRouter } from "next/router"
 import NextLink from "next/link"
 import { Fragment } from "react"
-import ImageGallery from 'react-image-gallery';
 import "../../node_modules/react-image-gallery/styles/css/image-gallery.css";
+import GalleryList from "components/GalleryList";
 
 
 const Kolstore = () => {
@@ -40,21 +41,8 @@ const Kolstore = () => {
 
     let title = details?.name
     let description = details?.description
-
-    const images = [
-        {
-            original: 'https://picsum.photos/id/1018/1000/600/',
-            thumbnail: 'https://picsum.photos/id/1018/250/150/',
-        },
-        {
-            original: 'https://picsum.photos/id/1015/1000/600/',
-            thumbnail: 'https://picsum.photos/id/1015/250/150/',
-        },
-        {
-            original: 'https://picsum.photos/id/1019/1000/600/',
-            thumbnail: 'https://picsum.photos/id/1019/250/150/',
-        },
-    ];
+    let gallery = details?.gallery
+    let development = details?.development
 
     return (
         <Fragment>
@@ -101,7 +89,7 @@ const Kolstore = () => {
                                     <Badge colorScheme="cyan" mr={2} fontSize='0.7em'>
                                         <Icon as={MdSettingsApplications} /> Application
                                     </Badge>
-                                    <Text as={'span'}>{details?.application}</Text>
+                                    <Text as={'span'}>{details.application}</Text>
                                 </ListItem>
                             )}
                             <ListItem>
@@ -132,7 +120,7 @@ const Kolstore = () => {
                                 <ListItem>
                                     <Badge colorScheme="cyan" mr={2} fontSize="0.7em"><Icon as={VscSourceControl} /> Source</Badge>
                                     <Text as={'span'}>
-                                        <NextLink href={details?.source} passHref>
+                                        <NextLink href={details.source} passHref>
                                             <Link isExternal
                                                 _hover={{
                                                     // textDecoration: 'none'
@@ -158,30 +146,33 @@ const Kolstore = () => {
                                     </Text>
                                 </Flex>
                             </ListItem>
+                            {development && (
+                                <ListItem>
+                                    <Badge my={'auto'} colorScheme="cyan" mr={2} fontSize="0.7em"><Icon as={BsPeople} /> Development</Badge>
+                                    <Text as={'span'} fontSize="0.7em">
+                                        <List spacing={1}>
+                                            {development.map((item, idx) => (
+                                                <ListItem>
+                                                    <ListIcon as={MdCheckCircle} color='green.500' /> {item}
+                                                </ListItem>
+                                            ))}
+                                        </List>
+                                    </Text>
+                                </ListItem>
+                            )}
+                            {gallery && (
+                                <ListItem>
+                                    <Badge my={'auto'} colorScheme="cyan" mr={2} fontSize="0.7em"><Icon as={GrMonitor} /> Screen</Badge>
+                                    <Box>
+                                        {gallery.map((item, idx) => (
+                                            <GalleryList 
+                                                index={ idx+1 }
+                                                item={ item } />
+                                        ))}
+                                    </Box>
+                                </ListItem>
+                            )}
                         </List>
-                        
-                        
-                        <Box display={['none', 'none', 'block']}>
-                            {details?.gallery && (
-                                <ImageGallery
-                                    items={details?.gallery}
-                                    thumbnailPosition={'left'}
-                                    showIndex={'true'}
-                                    showBullets={'true'}
-                                />
-                            )}
-                        </Box>
-                        <Box display={['block', 'block', 'none']}>
-                            {details?.gallery && (
-                                <ImageGallery
-                                    items={details?.gallery}
-                                    thumbnailPosition={'bottom'}
-                                    showIndex={'true'}
-                                    showBullets={'true'}
-                                    autoPlay={'true'}
-                                />
-                            )}
-                        </Box>
                     </MotionBox>
                 </PageSliderFade>
             </PageLayout>

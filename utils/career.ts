@@ -2,6 +2,14 @@ import { CareerEducationProps } from "../interfaces"
 
 export const career: CareerEducationProps[] = [
     {
+        title: 'Volservers Solution Sdn Bhd',
+        alt: 'Volservers image',
+        role: 'Full-stack Developer',
+        skills: ['php', 'laravel', 'javascript', 'vue'],
+        period: 'August 2022 - Present',
+        logo: '/assets/images/logos/volservers.jpg',
+    },
+    {
         title: 'Ionnex Sdn Bhd',
         alt: 'Inx image',
         role: 'Mid/Senior Web Developer',

@@ -45,7 +45,6 @@ const Gist = () => {
 
     async function getUserRepo() {
         await get(`/users/${GITHUB_USERNAME}/gists?per_page=30`).then((res) => {
-            console.log(res)
             setRepositories(res)
         }).catch((error) => {
             console.log("🚀 ~ file: github-repository.tsx ~ line 69 ~ awaitget ~ error", error)

@@ -50,7 +50,6 @@ const sendEmail = async (req: NextApiRequest, res: NextApiResponse) => {
     try {
         await sendgrid.send(data);
     } catch (error) {
-        console.log('error', error);
         return res.status(error.statusCode || 500).json({ error: error.message });
     }
 
