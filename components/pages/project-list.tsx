@@ -27,14 +27,22 @@ import { projects as projectLists } from "utils/projects"
 
 const ProjectLists = ({ ...props }) => {
     const [projects, setProject] = useState([])
+    const [total, setTotal] = useState(0)
 
     useEffect(() => {
         setProject(projectLists)
+        setTotal(projectLists.length)
     }, [])
 
     const filterProject = (tab) => {
-        if (tab.length) setProject(projectLists.filter((item) => item.filter.includes(tab)))
-        else setProject(projectLists)
+        if (tab.length) {
+            let details = projectLists.filter((item) => item.filter.includes(tab));
+            setProject(details)
+            setTotal(details.length)
+        }else {
+            setProject(projectLists)
+            setTotal(projectLists.length)
+        }
     }
     return (
         <Section mt={3}>
@@ -64,6 +72,7 @@ const ProjectLists = ({ ...props }) => {
                 </TabList>
                 <TabPanels>
                     <TabPanel>
+                        <Text fontSize='md' textAlign={'left'}>{total} projects in the list.</Text>
                         <SimpleGrid columns={[1, 1, 2, 3]} spacing={4} mt={3}>
                             {projects.map((item, idx) => (
                                 <ProjectCard
@@ -77,6 +86,7 @@ const ProjectLists = ({ ...props }) => {
                         </SimpleGrid>
                     </TabPanel>
                     <TabPanel>
+                        <Text fontSize='md' textAlign={'left'}>{total} projects in the list.</Text>
                         <SimpleGrid columns={[1, 1, 2, 3]} spacing={4} mt={3}>
                             {projects.map((item, idx) => (
                                 <ProjectCard
@@ -90,6 +100,7 @@ const ProjectLists = ({ ...props }) => {
                         </SimpleGrid>
                     </TabPanel>
                     <TabPanel>
+                        <Text fontSize='md' textAlign={'left'}>{total} projects in the list.</Text>
                         <SimpleGrid columns={[1, 1, 2, 3]} spacing={4} mt={3}>
                             {projects.map((item, idx) => (
                                 <ProjectCard
@@ -103,6 +114,7 @@ const ProjectLists = ({ ...props }) => {
                         </SimpleGrid>
                     </TabPanel>
                     <TabPanel>
+                        <Text fontSize='md' textAlign={'left'}>{total} projects in the list.</Text>
                         <SimpleGrid columns={[1, 1, 2, 3]} spacing={4} mt={3}>
                             {projects.map((item, idx) => (
                                 <ProjectCard
@@ -116,6 +128,7 @@ const ProjectLists = ({ ...props }) => {
                         </SimpleGrid>
                     </TabPanel>
                     <TabPanel>
+                        <Text fontSize='md' textAlign={'left'}>{total} projects in the list.</Text>
                         <SimpleGrid columns={[1, 1, 2, 3]} spacing={4} mt={3}>
                             {projects.map((item, idx) => (
                                 <ProjectCard
@@ -153,10 +166,15 @@ const tabLists = [
         icon: MdOutlineSystemSecurityUpdateGood
     },
     {
-        name: 'E-commerce systems',
-        filter: 'ecommerce',
+        name: 'Mobile App',
+        filter: 'app',
         icon: AiOutlineShop
     },
+    // {
+    //     name: 'E-commerce systems',
+    //     filter: 'ecommerce',
+    //     icon: AiOutlineShop
+    // },
     {
         name: 'Restful API ',
         filter: 'api',

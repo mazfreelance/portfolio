@@ -2,6 +2,14 @@ import { ProjectProps } from "../interfaces";
 
 export const projects: ProjectProps[] = [
     {
+        name: 'CookX Asia',
+        description: 'e-Commerce systems',
+        publish: '2021',
+        image: '/assets/images/projects/cookx.png',
+        filter: ['webapp', 'app', 'api', 'ecommerce'],
+        link: '/projects/cookx'
+    },
+    {
         name: 'KOL Store',
         description: 'e-Commerce systems',
         publish: '2021',
@@ -67,7 +75,7 @@ export const projects: ProjectProps[] = [
     },
     {
         name: 'WEC Malaysia',
-        description: 'Web application',
+        description: 'Web Application',
         publish: '2016',
         image: '/assets/images/projects/worldenergy.png',
         filter: ['website'],
@@ -92,7 +100,74 @@ export const projects: ProjectProps[] = [
 ]
 
 export const ProjectDetails = {
-    lists: [
+    lists: [{
+            slug: 'cookx',
+            name: 'CookX Asia',
+            description: 'App designed for aspiring chefs and home cooks. Connecting food enthusiasts and foodpreneurs through all things food where they can CREATE, SHARE and MONETISE their food businesses. Users can enjoy pre-order features and learn to cook through video tutorials.',
+            publish: '2021',
+            status: true,
+            link: 'https://cookx.asia/',
+            skills: ['PHP', 'Laravel 8', 'JavaScript', 'VueJS'],
+            application: 'Mobile App, Admin Web, API',
+            latest: 'On Going',
+            development: [
+                'Contribution to the development of API.',
+                'Maintain and develop new feature',
+                'Develop referral signup systems',
+                'Develop voucher systems',
+                'Develop studio booking systems'
+            ],
+            gallery: [
+                {
+                    'name': 'Mobile App (Customer & Merchant)',
+                    'data':  [
+                        {
+                            original: '/assets/images/projects/gallery/cookx/app/customer-dashboard.jpeg',
+                            thumbnail: null,
+                        },
+                        {
+                            original: '/assets/images/projects/gallery/cookx/app/customer-discover.jpeg',
+                            thumbnail: null,
+                        },
+                        {
+                            original: '/assets/images/projects/gallery/cookx/app/customer-vouchers.jpeg',
+                            thumbnail: null,
+                        },
+                        {
+                            original: '/assets/images/projects/gallery/cookx/app/customer-profile.jpeg',
+                            thumbnail: null,
+                        },
+                        {
+                            original: '/assets/images/projects/gallery/cookx/app/merchant-profile.jpeg',
+                            thumbnail: null,
+                        },
+                        {
+                            original: '/assets/images/projects/gallery/cookx/app/merchant-item.jpeg',
+                            thumbnail: null,
+                        }
+                    ]
+                },
+                {
+                    'name': 'Admin Web',
+                    'data': [
+                        {
+                            original: '/assets/images/projects/gallery/cookx/admin/login.png',
+                            thumbnail: null,
+                        },
+                        {
+                            original: '/assets/images/projects/gallery/cookx/admin/dashboard.png',
+                            thumbnail: null,
+                        }
+                    ]
+                }
+            ],
+            clients: [
+                {
+                    name: 'Volserver Solution Sdn Bhd',
+                    image: '/assets/images/logos/volservers.jpg'
+                }
+            ]
+        },
         {
             slug: 'kolstore',
             name: 'KOL Store',
@@ -103,39 +178,46 @@ export const ProjectDetails = {
             skills: ['PHP', 'Lumen', 'JavaScript', 'VueJS', 'TailwindCSS'],
             application: 'Order, Merchant, Admin, API',
             latest: '12th July 2022',
+            development: [
+                'Contribution to the development of API and frontend.',
+                'Maintain and develop new feature'
+            ],
             gallery: [
                 {
-                    original: '/assets/images/projects/gallery/kolstore/order-1000x600.png',
-                    thumbnail: '/assets/images/projects/gallery/kolstore/order-250x150.png',
+                    'name': 'Order Web',
+                    'data': [
+                        {
+                            original: '/assets/images/projects/gallery/kolstore/cart.png',
+                            thumbnail: '/assets/images/projects/gallery/kolstore/cart.png',
+                        },
+                        {
+                            original: '/assets/images/projects/gallery/kolstore/order.png',
+                            thumbnail: '/assets/images/projects/gallery/kolstore/order.png',
+                        },
+                        {
+                            original: '/assets/images/projects/gallery/kolstore/order-detail.png',
+                            thumbnail: '/assets/images/projects/gallery/kolstore/order-detail.png',
+                        }
+                    ]
                 },
                 {
-                    original: '/assets/images/projects/gallery/kolstore/cart.png',
-                    thumbnail: '/assets/images/projects/gallery/kolstore/cart.png',
+                    'name': 'Merchant Web',
+                    'data': [
+                        {
+                            original: '/assets/images/projects/gallery/kolstore/merchant-dashboard.png',
+                            thumbnail: '/assets/images/projects/gallery/kolstore/merchant-dashboard.png',
+                        }
+                    ]
                 },
                 {
-                    original: '/assets/images/projects/gallery/kolstore/order.png',
-                    thumbnail: '/assets/images/projects/gallery/kolstore/order.png',
-                },
-                {
-                    original: '/assets/images/projects/gallery/kolstore/order-detail.png',
-                    thumbnail: '/assets/images/projects/gallery/kolstore/order-detail.png',
-                },
-                {
-                    original: '/assets/images/projects/gallery/kolstore/merchant-1000x600.png',
-                    thumbnail: '/assets/images/projects/gallery/kolstore/merchant-250x150.png',
-                },
-                {
-                    original: '/assets/images/projects/gallery/kolstore/merchant-dashboard.png',
-                    thumbnail: '/assets/images/projects/gallery/kolstore/merchant-dashboard.png',
-                },
-                {
-                    original: '/assets/images/projects/gallery/kolstore/admin-1000x600.png',
-                    thumbnail: '/assets/images/projects/gallery/kolstore/admin-250x150.png',
-                },
-                {
-                    original: '/assets/images/projects/gallery/kolstore/admin-dashboard.png',
-                    thumbnail: '/assets/images/projects/gallery/kolstore/admin-dashboard.png',
-                },
+                    'name': 'Admin Web',
+                    'data': [
+                        {
+                            original: '/assets/images/projects/gallery/kolstore/admin-dashboard.png',
+                            thumbnail: '/assets/images/projects/gallery/kolstore/admin-dashboard.png',
+                        }
+                    ]
+                }
             ],
             clients: [
                 {
@@ -154,6 +236,10 @@ export const ProjectDetails = {
             skills: ['PHP', 'Laravel'],
             application: 'API',
             latest: 'Jan 2022',
+            development: [
+                'Contribution to the development of API.',
+                'Maintain and develop new feature'
+            ],
             clients: [
                 {
                     name: 'Ionnex Sdn Bhd',
@@ -171,6 +257,10 @@ export const ProjectDetails = {
             skills: ['HTML', 'PHP', 'Laravel', 'JavaScript', 'VueJS', 'Bootstrap 4'],
             application: 'Web, API',
             latest: '30th October 2021',
+            development: [
+                'Contribution to the development of API and frontend.',
+                'Maintain and develop new feature'
+            ],
             clients: [
                 {
                     name: 'Araken Sdn Bhd',
@@ -190,8 +280,12 @@ export const ProjectDetails = {
             status: true,
             link: 'https://republic.gg',
             skills: ['PHP', 'Laravel 8', 'JavaScript', 'NuxtJS', 'Bootstrap 4', 'Sass'],
-            application: 'Web, API',
+            application: 'WebApp, API',
             latest: '28th October 2021',
+            development: [
+                'Contribution to the development of API and frontend.',
+                'Design & develop new version'
+            ],
             clients: [
                 {
                     name: 'Ionnex Sdn Bhd',
@@ -207,69 +301,88 @@ export const ProjectDetails = {
             status: true,
             link: 'https://republic.gg',
             skills: ['HTML', 'Sass', 'PHP', 'Yii2', 'Laravel 5.6', 'Bootstrap 4', 'JavaScript'],
-            application: 'Web, Admin, Report Dashboard, API',
+            application: 'WebApp, Admin Web, Report Dashboard Web, API',
             latest: '31st March 2022',
+            development: [
+                'Contribution to the development of API and frontend.',
+                'Maintain and develop new feature'
+            ],
             gallery: [
                 {
-                    original: '/assets/images/projects/gallery/rgg/version1-1.png',
-                    thumbnail: '/assets/images/projects/gallery/rgg/version1-1.png',
+                    'name': 'Version 3',
+                    'data': [
+                        {
+                            original: '/assets/images/projects/gallery/rgg/version3-1.png',
+                            thumbnail: '/assets/images/projects/gallery/rgg/version3-1.png',
+                        },
+                        {
+                            original: '/assets/images/projects/gallery/rgg/version3-2.png',
+                            thumbnail: '/assets/images/projects/gallery/rgg/version3-2.png',
+                        },
+                        {
+                            original: '/assets/images/projects/gallery/rgg/version3-3.png',
+                            thumbnail: '/assets/images/projects/gallery/rgg/version3-3.png',
+                        },
+                        {
+                            original: '/assets/images/projects/gallery/rgg/version3-4.png',
+                            thumbnail: '/assets/images/projects/gallery/rgg/version3-4.png',
+                        },
+                        {
+                            original: '/assets/images/projects/gallery/rgg/version3-5.png',
+                            thumbnail: '/assets/images/projects/gallery/rgg/version3-5.png',
+                        },
+                        {
+                            original: '/assets/images/projects/gallery/rgg/version3-6.png',
+                            thumbnail: '/assets/images/projects/gallery/rgg/version3-6.png',
+                        }
+                    ]
                 },
                 {
-                    original: '/assets/images/projects/gallery/rgg/version1-2.png',
-                    thumbnail: '/assets/images/projects/gallery/rgg/version1-2.png',
+                    'name': 'Version 2',
+                    'data': [
+                        {
+                            original: '/assets/images/projects/gallery/rgg/version2-1.png',
+                            thumbnail: '/assets/images/projects/gallery/rgg/version2-1.png',
+                        },
+                        {
+                            original: '/assets/images/projects/gallery/rgg/version2-2.png',
+                            thumbnail: '/assets/images/projects/gallery/rgg/version2-2.png',
+                        },
+                        {
+                            original: '/assets/images/projects/gallery/rgg/version2-3.png',
+                            thumbnail: '/assets/images/projects/gallery/rgg/version2-3.png',
+                        },
+                        {
+                            original: '/assets/images/projects/gallery/rgg/version2-4.png',
+                            thumbnail: '/assets/images/projects/gallery/rgg/version2-4.png',
+                        },
+                        {
+                            original: '/assets/images/projects/gallery/rgg/version2-5.png',
+                            thumbnail: '/assets/images/projects/gallery/rgg/version2-5.png',
+                        }
+                    ]
                 },
                 {
-                    original: '/assets/images/projects/gallery/rgg/version1-3.png',
-                    thumbnail: '/assets/images/projects/gallery/rgg/version1-3.png',
-                },
-                {
-                    original: '/assets/images/projects/gallery/rgg/version1-4.png',
-                    thumbnail: '/assets/images/projects/gallery/rgg/version1-4.png',
-                },
-                {
-                    original: '/assets/images/projects/gallery/rgg/version2-1.png',
-                    thumbnail: '/assets/images/projects/gallery/rgg/version2-1.png',
-                },
-                {
-                    original: '/assets/images/projects/gallery/rgg/version2-2.png',
-                    thumbnail: '/assets/images/projects/gallery/rgg/version2-2.png',
-                },
-                {
-                    original: '/assets/images/projects/gallery/rgg/version2-3.png',
-                    thumbnail: '/assets/images/projects/gallery/rgg/version2-3.png',
-                },
-                {
-                    original: '/assets/images/projects/gallery/rgg/version2-4.png',
-                    thumbnail: '/assets/images/projects/gallery/rgg/version2-4.png',
-                },
-                {
-                    original: '/assets/images/projects/gallery/rgg/version2-5.png',
-                    thumbnail: '/assets/images/projects/gallery/rgg/version2-5.png',
-                },
-                {
-                    original: '/assets/images/projects/gallery/rgg/version3-1.png',
-                    thumbnail: '/assets/images/projects/gallery/rgg/version3-1.png',
-                },
-                {
-                    original: '/assets/images/projects/gallery/rgg/version3-2.png',
-                    thumbnail: '/assets/images/projects/gallery/rgg/version3-2.png',
-                },
-                {
-                    original: '/assets/images/projects/gallery/rgg/version3-3.png',
-                    thumbnail: '/assets/images/projects/gallery/rgg/version3-3.png',
-                },
-                {
-                    original: '/assets/images/projects/gallery/rgg/version3-4.png',
-                    thumbnail: '/assets/images/projects/gallery/rgg/version3-4.png',
-                },
-                {
-                    original: '/assets/images/projects/gallery/rgg/version3-5.png',
-                    thumbnail: '/assets/images/projects/gallery/rgg/version3-5.png',
-                },
-                {
-                    original: '/assets/images/projects/gallery/rgg/version3-6.png',
-                    thumbnail: '/assets/images/projects/gallery/rgg/version3-6.png',
-                },
+                    'name': 'Version 1',
+                    'data': [
+                        {
+                            original: '/assets/images/projects/gallery/rgg/version1-1.png',
+                            thumbnail: '/assets/images/projects/gallery/rgg/version1-1.png',
+                        },
+                        {
+                            original: '/assets/images/projects/gallery/rgg/version1-2.png',
+                            thumbnail: '/assets/images/projects/gallery/rgg/version1-2.png',
+                        },
+                        {
+                            original: '/assets/images/projects/gallery/rgg/version1-3.png',
+                            thumbnail: '/assets/images/projects/gallery/rgg/version1-3.png',
+                        },
+                        {
+                            original: '/assets/images/projects/gallery/rgg/version1-4.png',
+                            thumbnail: '/assets/images/projects/gallery/rgg/version1-4.png',
+                        }
+                    ]
+                }
             ],
             clients: [
                 {
@@ -293,13 +406,18 @@ export const ProjectDetails = {
             latest: 'December 2018',
             gallery: [
                 {
-                    original: '/assets/images/projects/gallery/ams/checkinout.png',
-                    thumbnail: '/assets/images/projects/gallery/ams/checkinout.png',
-                },
-                {
-                    original: '/assets/images/projects/gallery/ams/login.png',
-                    thumbnail: '/assets/images/projects/gallery/ams/login.png',
-                },
+                    'name': null,
+                    'data': [
+                        {
+                            original: '/assets/images/projects/gallery/ams/checkinout.png',
+                            thumbnail: '/assets/images/projects/gallery/ams/checkinout.png',
+                        },
+                        {
+                            original: '/assets/images/projects/gallery/ams/login.png',
+                            thumbnail: '/assets/images/projects/gallery/ams/login.png',
+                        }
+                    ]
+                }
             ],
             clients: [
                 {
@@ -319,20 +437,30 @@ export const ProjectDetails = {
             latest: '-',
             gallery: [
                 {
-                    original: '/assets/images/projects/gallery/workshire/version1.png',
-                    thumbnail: '/assets/images/projects/gallery/workshire/version1.png'
+                    'name': 'Version 2',
+                    'data': [
+                        {
+                            original: '/assets/images/projects/gallery/workshire/version1.png',
+                            thumbnail: '/assets/images/projects/gallery/workshire/version1.png'
+                        },
+                        {
+                            original: '/assets/images/projects/gallery/workshire/version1-1.png',
+                            thumbnail: '/assets/images/projects/gallery/workshire/version1-1.png'
+                        }
+                    ]
                 },
                 {
-                    original: '/assets/images/projects/gallery/workshire/version1-1.png',
-                    thumbnail: '/assets/images/projects/gallery/workshire/version1-1.png'
-                },
-                {
-                    original: '/assets/images/projects/gallery/workshire/version2.png',
-                    thumbnail: '/assets/images/projects/gallery/workshire/version2.png'
-                },
-                {
-                    original: '/assets/images/projects/gallery/workshire/version2-1.png',
-                    thumbnail: '/assets/images/projects/gallery/workshire/version2-1.png'
+                    'name': 'Version 1',
+                    'data': [
+                        {
+                            original: '/assets/images/projects/gallery/workshire/version2.png',
+                            thumbnail: '/assets/images/projects/gallery/workshire/version2.png'
+                        },
+                        {
+                            original: '/assets/images/projects/gallery/workshire/version2-1.png',
+                            thumbnail: '/assets/images/projects/gallery/workshire/version2-1.png'
+                        }
+                    ]
                 }
             ],
             clients: [
@@ -369,41 +497,46 @@ export const ProjectDetails = {
             latest: '-',
             gallery: [
                 {
-                    original: '/assets/images/projects/gallery/wec/mainpage.png',
-                    thumbnail: '/assets/images/projects/gallery/wec/mainpage.png',
-                },
-                {
-                    original: '/assets/images/projects/gallery/wec/login.png',
-                    thumbnail: '/assets/images/projects/gallery/wec/login.png',
-                },
-                {
-                    original: '/assets/images/projects/gallery/wec/profile.png',
-                    thumbnail: '/assets/images/projects/gallery/wec/profile.png',
-                },
-                {
-                    original: '/assets/images/projects/gallery/wec/fees.png',
-                    thumbnail: '/assets/images/projects/gallery/wec/fees.png',
-                },
-                {
-                    original: '/assets/images/projects/gallery/wec/payment.png',
-                    thumbnail: '/assets/images/projects/gallery/wec/payment.png',
-                },
-                {
-                    original: '/assets/images/projects/gallery/wec/annualfees.png',
-                    thumbnail: '/assets/images/projects/gallery/wec/annualfees.png',
-                },
-                {
-                    original: '/assets/images/projects/gallery/wec/membership.png',
-                    thumbnail: '/assets/images/projects/gallery/wec/membership.png',
-                },
-                {
-                    original: '/assets/images/projects/gallery/wec/membership-detail.png',
-                    thumbnail: '/assets/images/projects/gallery/wec/membership-detail.png',
-                },
-                {
-                    original: '/assets/images/projects/gallery/wec/user-management.png',
-                    thumbnail: '/assets/images/projects/gallery/wec/user-management.png',
-                },
+                    'name': null,
+                    'data': [
+                        {
+                            original: '/assets/images/projects/gallery/wec/mainpage.png',
+                            thumbnail: '/assets/images/projects/gallery/wec/mainpage.png',
+                        },
+                        {
+                            original: '/assets/images/projects/gallery/wec/login.png',
+                            thumbnail: '/assets/images/projects/gallery/wec/login.png',
+                        },
+                        {
+                            original: '/assets/images/projects/gallery/wec/profile.png',
+                            thumbnail: '/assets/images/projects/gallery/wec/profile.png',
+                        },
+                        {
+                            original: '/assets/images/projects/gallery/wec/fees.png',
+                            thumbnail: '/assets/images/projects/gallery/wec/fees.png',
+                        },
+                        {
+                            original: '/assets/images/projects/gallery/wec/payment.png',
+                            thumbnail: '/assets/images/projects/gallery/wec/payment.png',
+                        },
+                        {
+                            original: '/assets/images/projects/gallery/wec/annualfees.png',
+                            thumbnail: '/assets/images/projects/gallery/wec/annualfees.png',
+                        },
+                        {
+                            original: '/assets/images/projects/gallery/wec/membership.png',
+                            thumbnail: '/assets/images/projects/gallery/wec/membership.png',
+                        },
+                        {
+                            original: '/assets/images/projects/gallery/wec/membership-detail.png',
+                            thumbnail: '/assets/images/projects/gallery/wec/membership-detail.png',
+                        },
+                        {
+                            original: '/assets/images/projects/gallery/wec/user-management.png',
+                            thumbnail: '/assets/images/projects/gallery/wec/user-management.png',
+                        }
+                    ]
+                }
             ],
             clients: [
                 {
