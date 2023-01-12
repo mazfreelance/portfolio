@@ -2,7 +2,7 @@
 /* eslint-disable @typescript-eslint/explicit-function-return-type */
 
 import { SlideFade } from "@chakra-ui/react";
-import { Props } from "./../../interfaces";
+import { Props } from "./../../types";
 import { MotionBox } from "./motion";
 
 export const item = {

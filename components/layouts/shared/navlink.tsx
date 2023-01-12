@@ -1,7 +1,7 @@
 import { useColorModeValue } from "@chakra-ui/react";
 import { useRouter } from "next/router";
 import NextLink from "next/link";
-import { NavLinkProps } from "../../../interfaces"
+import { NavLinkProps } from "../../../types"
 import {
     Link,
 } from '@chakra-ui/react';

@@ -1,4 +1,4 @@
-import { CareerEducationProps } from "../interfaces";
+import { CareerEducationProps } from "../types";
 
 export const education: CareerEducationProps[] = [
     {

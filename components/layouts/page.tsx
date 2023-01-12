@@ -1,6 +1,6 @@
 import { Fragment, ReactNode } from 'react'
 import { motion } from 'framer-motion'
-import { PageProps } from "../../interfaces"
+import { PageProps } from "../../types"
 import Meta from './shared/meta'
 
 const variants = {

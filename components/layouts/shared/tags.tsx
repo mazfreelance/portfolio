@@ -3,9 +3,9 @@ import {
     Tag as ChakraTag
 } from "@chakra-ui/react"
 import { getTagColor } from "components/theme"
-import { CTagProps, FProps } from "./../../../interfaces"
+import { ChakraTagProps, FlexProps } from "./../../../types"
 
-export const Tag: React.FC<CTagProps> = ({
+export const Tag: React.FC<ChakraTagProps> = ({
     name,
     interactive = true,
     ...props
@@ -30,7 +30,7 @@ export const Tag: React.FC<CTagProps> = ({
 }
 
 
-export const Tags: React.FC<FProps> = ({
+export const Tags: React.FC<FlexProps> = ({
     tags,
     interactive = true,
     tagProps = {},
