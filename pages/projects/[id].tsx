@@ -24,15 +24,16 @@ import { BsPeople } from "react-icons/bs"
 import { GrStatusInfo, GrTechnology, GrUpdate, GrMonitor } from "react-icons/gr"
 import { GiFlatPlatform } from "react-icons/gi"
 import { MdSettingsApplications, MdCheckCircle } from "react-icons/md";
-import { ProjectDetails } from '../../utils/projects'
+import { ProjectDetails } from '../../utils/project-details'
 import { useRouter } from "next/router"
 import NextLink from "next/link"
 import { Fragment } from "react"
 import "../../node_modules/react-image-gallery/styles/css/image-gallery.css";
 import GalleryList from "components/GalleryList";
+import { NextPage } from "next";
 
 
-const Kolstore = () => {
+const PageId : NextPage = (props) => {
     const router = useRouter()
     const { id } = router.query
 
@@ -92,7 +93,7 @@ const Kolstore = () => {
                                     <Text as={'span'}>{details.application}</Text>
                                 </ListItem>
                             )}
-                            <ListItem>
+                            <ListItem key={4}>
                                 <Badge colorScheme="cyan" mr={2} fontSize='0.7em'>
                                     <Icon as={GrTechnology} /> Stack
                                 </Badge>
@@ -152,7 +153,7 @@ const Kolstore = () => {
                                     <Text as={'span'} fontSize="0.7em">
                                         <List spacing={1}>
                                             {development.map((item, idx) => (
-                                                <ListItem>
+                                                <ListItem key={idx}>
                                                     <ListIcon as={MdCheckCircle} color='green.500' /> {item}
                                                 </ListItem>
                                             ))}
@@ -166,6 +167,7 @@ const Kolstore = () => {
                                     <Box>
                                         {gallery.map((item, idx) => (
                                             <GalleryList 
+                                                key={idx}
                                                 index={ idx+1 }
                                                 item={ item } />
                                         ))}
@@ -180,4 +182,4 @@ const Kolstore = () => {
     )
 }
 
-export default Kolstore
+export default PageId

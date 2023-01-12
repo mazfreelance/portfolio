@@ -4,14 +4,14 @@ import App, { AppProps } from "next/app"
 import { useRouter } from "next/router"
 import { useEffect } from "react"
 import AppLayout from "../components/layouts/app"
-import * as gtag from '../library/google-analytics'
+// import * as gtag from '../library/google-analytics'
 
 function MyApp({ Component, pageProps }: AppProps) {
     const router = useRouter()
 
     useEffect(() => {
         const handleRouteChange = (url) => {
-            gtag.pageview(url)
+            // gtag.pageview(url)
         }
         router.events.on('routeChangeComplete', handleRouteChange)
         return () => {

@@ -24,7 +24,7 @@ import {
     CardTransition,
     item
 } from "components/animations/page-transition";
-import { CareerEducationProps, ProjectProps } from "../../../interfaces";
+import { CareerEducationProps, ProjectProps } from "../../../types";
 import { Tags } from "./tags";
 import { usePalette } from "react-palette";
 import { BiGitRepoForked, BiStar, BiComment } from "react-icons/bi"

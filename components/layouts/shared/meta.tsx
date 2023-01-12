@@ -1,5 +1,5 @@
 import Head from "next/head"
-import { MetaProps } from "../../../interfaces"
+import { MetaProps } from "../../../types"
 
 const Meta = (props: MetaProps): JSX.Element => {
     return (

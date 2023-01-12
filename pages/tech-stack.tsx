@@ -22,7 +22,7 @@ import {
 } from "components/animations/page-transition"
 import PageLayout from "components/layouts/page"
 import { skillsArray } from "utils/skills"
-import { SkillProps } from "../interfaces"
+import { SkillProps } from "../types"
 import { SiAzuredevops } from "react-icons/si";
 import {
     MdOutlineDeveloperMode,

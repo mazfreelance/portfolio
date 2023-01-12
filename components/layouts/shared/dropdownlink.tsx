@@ -1,7 +1,7 @@
 import { HStack, MenuItem, useColorModeValue, Text, Icon } from "@chakra-ui/react";
 import { useRouter } from "next/router";
 import NextLink from "next/link";
-import { DropdownLinkProps } from "../../../interfaces"
+import { DropdownLinkProps } from "../../../types"
 import {
     Link,
 } from '@chakra-ui/react';
