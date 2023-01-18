@@ -17,6 +17,7 @@ const Meta = (props: MetaProps): JSX.Element => {
                 {props.title.includes('Azmin') ? props.title : props.title.concat(' | Mohd Azmin')}
             </title>
             <link rel="icon" type="image/x-icon" href="/favicon-ma.ico" />
+            <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"/>
         </Head>
     )
 }
@@ -24,8 +25,8 @@ const Meta = (props: MetaProps): JSX.Element => {
 Meta.defaultProps = {
     'author': 'Mohd Azmin',
     'title': 'Mohd Azmin | Full Stack Developer',
-    'description': 'I am Full Stack Developer. Love to find new technology and knowledge',
-    'keywords': 'mohdazmin, mohd azmin, web developer, full stack developer, backend developer',
+    'description': 'I am Azmin and a web developer based in Kuala Lumpur, Malaysia with a passion for building digital services. Love to find new technology and knowledge. Check it out on my sites',
+    'keywords': 'mohdazmin, mohd azmin, mohd azmin developer, azmin developer, web developer, full stack developer, backend developer',
     'image': 'https://mohdazmin.com/logo-ma.png'
 }
 

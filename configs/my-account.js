@@ -1,5 +1,6 @@
-import { GrGithub, GrTwitter, GrLinkedin, GrMailOption, GrInstagram } from "react-icons/gr";
-import { FaGitlab } from "react-icons/fa";
+import { GrGithub, GrTwitter, GrLinkedin, GrInstagram } from "react-icons/gr";
+import { FaGitlab, FaSitemap } from "react-icons/fa";
+import { AiOutlineMail } from "react-icons/ai";
 
 const MyAccount = {
   accounts: [
@@ -37,7 +38,13 @@ const MyAccount = {
       url: "mailto:me@mohdazmin.com",
       label: "Mail Mohd Azmin",
       type: "gray",
-      icon: <GrMailOption />,
+      icon: <AiOutlineMail />,
+    },
+    {
+      url: "/sitemap.xml",
+      label: "Site Map",
+      type: "green",
+      icon: <FaSitemap />,
     },
   ],
 };
