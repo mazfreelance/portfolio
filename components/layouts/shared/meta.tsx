@@ -24,8 +24,8 @@ const Meta = (props: MetaProps): JSX.Element => {
 Meta.defaultProps = {
     'author': 'Mohd Azmin',
     'title': 'Mohd Azmin | Full Stack Developer',
-    'description': 'I am Full Stack Developer. Love to find new technology and knowledge',
-    'keywords': 'mohdazmin, mohd azmin, web developer, full stack developer, backend developer',
+    'description': 'I am Azmin and a web developer based in Kuala Lumpur, Malaysia with a passion for building digital services. Love to find new technology and knowledge. Check it out on my sites',
+    'keywords': 'mohdazmin, mohd azmin, mohd azmin developer, azmin developer, web developer, full stack developer, backend developer',
     'image': 'https://mohdazmin.com/logo-ma.png'
 }
 

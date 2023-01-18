@@ -18,7 +18,7 @@
       "*": ["/*"],
       "components/*": ["components/*"],
       "configs/*": ["configs/*"],
-      "interfaces/*": ["interfaces/*"],
+      "types/*": ["types/*"],
       "library/*": ["library/*"],
       "pages/*": ["pages/*"],
       "public/*": ["public/*"],
@@ -26,6 +26,6 @@
       "utils/*": ["utils/*"],
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "configs/my-account.js", "components/layouts/shared/section.tsx", "components/layouts/shared/header.tsx"],
+  "include": ["next-env.d.ts", "next.config.js", "**/*.ts", "**/*.tsx", "configs/my-account.js", "components/layouts/shared/section.tsx", "components/layouts/shared/header.tsx"],
   "exclude": ["node_modules"]
 }

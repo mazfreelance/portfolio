@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<url
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd"
+>
+  <url>
+    <loc>http://localhost:5555</loc>
+    <lastmod>2023-01-18T16:12:06.433Z</lastmod>
+  </url>
+
+  <url>
+    <loc>http://localhost:5555/open-source</loc>
+    <lastmod>2023-01-18T16:12:06.433Z</lastmod>
+  </url>
+
+  <url>
+    <loc>http://localhost:5555/projects</loc>
+    <lastmod>2023-01-18T16:12:06.433Z</lastmod>
+  </url>
+
+  <url>
+    <loc>http://localhost:5555/tech-stack</loc>
+    <lastmod>2023-01-18T16:12:06.433Z</lastmod>
+  </url>
+
+  <url>
+    <loc>http://localhost:5555/projects/[id]</loc>
+    <lastmod>2023-01-18T16:12:06.433Z</lastmod>
+  </url>
+</url>

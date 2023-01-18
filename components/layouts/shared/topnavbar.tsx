@@ -45,6 +45,7 @@ export default function TopNav() {
         bg: useColorModeValue('gray.200', 'gray.900'),
         color: useColorModeValue('blue.500', 'blue.200'),
     };
+    const mode = useColorModeValue("dark", "light")
     return (
         <>
             <Box
@@ -72,7 +73,11 @@ export default function TopNav() {
                     <HStack spacing={ 8 } alignItems={ 'center' }>
                         <MotionBox whileHover={ { scale: 1.2 } } shadow="md">
                             <NextLink href={ '/' } passHref>
-                            <Image src={ '/logo-ma.png' } alt='Mohd Azmin' boxSize={ '65px' }/>
+                            {mode == 'dark' ? (
+                                <Image src={ '/logo-ma.png' } alt='Mohd Azmin' boxSize={ '50px' } loading='lazy'/>
+                            ) : (
+                                <Image src={ '/logo-ma-white.png' } alt='Mohd Azmin' boxSize={ '50px' } loading='lazy'/>
+                            )}
                             </NextLink>
                         </MotionBox>
                         <HStack as={ 'nav' } spacing={ 4 } display={ { base: 'none', md: 'flex' } }>
