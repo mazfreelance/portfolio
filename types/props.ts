@@ -73,4 +73,5 @@ export interface ProjectProps {
     image?: string;
     filter?: string[];
     link: string;
+    status: boolean;
 }

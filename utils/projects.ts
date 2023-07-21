@@ -7,7 +7,8 @@ export const projects: ProjectProps[] = [
         publish: '2022',
         image: '/assets/images/projects/cookx.png',
         filter: ['webapp', 'app', 'api', 'ecommerce'],
-        link: '/projects/cookx'
+        link: '/projects/cookx',
+        status: true
     },
     {
         name: 'KOL Store',
@@ -15,7 +16,8 @@ export const projects: ProjectProps[] = [
         publish: '2021',
         image: '/assets/images/projects/kolstore.png',
         filter: ['webapp', 'api', 'ecommerce'],
-        link: '/projects/kolstore'
+        link: '/projects/kolstore',
+        status: true
     },
     {
         name: 'Nimfa',
@@ -23,7 +25,8 @@ export const projects: ProjectProps[] = [
         publish: '2021',
         image: '/assets/images/projects/nimfa.png',
         filter: ['api'],
-        link: '/projects/nimfa'
+        link: '/projects/nimfa',
+        status: false
     },
     {
         name: 'CPD Module',
@@ -31,31 +34,35 @@ export const projects: ProjectProps[] = [
         publish: '2021',
         image: '/assets/images/projects/fimm.png',
         filter: ['webapp', 'api'],
-        link: '/projects/fimm'
+        link: '/projects/fimm',
+        status: true
     },
-    {
-        name: 'Republic GG v4.0',
-        description: 'e-Commerce systems',
-        publish: '2021 - unrelease',
-        image: '/assets/images/projects/rgg.png',
-        filter: ['webapp', 'api', 'ecommerce'],
-        link: '/projects/rgg4.0'
-    },
+    // {
+    //     name: 'Republic GG v4.0',
+    //     description: 'e-Commerce systems',
+    //     publish: '2021 - unrelease',
+    //     image: '/assets/images/projects/rgg.png',
+    //     filter: ['webapp', 'api', 'ecommerce'],
+    //     link: '/projects/rgg4.0',
+    //     status: false
+    // },
     {
         name: 'Republic GG',
         description: 'e-Commerce systems',
         publish: '2019',
         image: '/assets/images/projects/rgg.png',
         filter: ['webapp', 'api', 'ecommerce'],
-        link: '/projects/rgg'
+        link: '/projects/rgg',
+        status: true
     },
     {
-        name: 'Attendance Management',
+        name: 'AMS Systems',
         description: 'Management systems',
         publish: '2018',
         image: '/assets/images/projects/ams.PNG',
         filter: ['webapp'],
-        link: '/projects/ams'
+        link: '/projects/ams',
+        status: false
     },
     {
         name: 'Workshire',
@@ -63,7 +70,8 @@ export const projects: ProjectProps[] = [
         publish: '2018',
         image: '/assets/images/projects/workshire.png',
         filter: ['webapp'],
-        link: '/projects/workshire'
+        link: '/projects/workshire',
+        status: false
     },
     {
         name: 'Talent Suites',
@@ -71,7 +79,8 @@ export const projects: ProjectProps[] = [
         publish: '2017',
         image: '/assets/images/projects/talentsuites.png',
         filter: ['website'],
-        link: '/projects/talent-suites'
+        link: '/projects/talent-suites',
+        status: true
     },
     {
         name: 'WEC Malaysia',
@@ -79,15 +88,17 @@ export const projects: ProjectProps[] = [
         publish: '2016',
         image: '/assets/images/projects/worldenergy.png',
         filter: ['website'],
-        link: '/projects/wecm'
+        link: '/projects/wecm',
+        status: false
     },
     {
-        name: 'IJaC Booking Management',
+        name: 'IJaC Systems',
         description: 'Booking systems',
         publish: '2016',
         image: null,
         filter: ['webapp'],
-        link: '/projects/ijac'
+        link: '/projects/ijac',
+        status: false
     },
     {
         name: 'Hotel Management',
@@ -95,6 +106,7 @@ export const projects: ProjectProps[] = [
         publish: '2015',
         image: null,
         filter: ['webapp'],
-        link: '/projects/hms'
+        link: '/projects/hms',
+        status: false
     }
 ]

@@ -18,11 +18,11 @@ import { Tags } from "../../components/layouts/shared/tags";
 import PageLayout from "../../components/layouts/page"
 import { PageSliderFade } from "../../components/animations/page-transition"
 import { MotionBox } from "../../components/animations/motion"
-import { HiExternalLink } from "react-icons/hi"
+import { HiExternalLink, HiLink } from "react-icons/hi"
 import { VscGlobe, VscSourceControl } from "react-icons/vsc"
 import { BsPeople } from "react-icons/bs"
 import { GrStatusInfo, GrTechnology, GrUpdate, GrMonitor } from "react-icons/gr"
-import { GiFlatPlatform } from "react-icons/gi"
+import { GiFlatPlatform, GiRelationshipBounds } from "react-icons/gi"
 import { MdSettingsApplications, MdCheckCircle } from "react-icons/md";
 import { ProjectDetails } from '../../utils/project-details'
 import { useRouter } from "next/router"
@@ -44,6 +44,7 @@ const PageId : NextPage = (props) => {
     let description = details?.description
     let gallery = details?.gallery
     let development = details?.development
+    let related = details?.related
 
     return (
         <Fragment>
@@ -133,20 +134,6 @@ const PageId : NextPage = (props) => {
                                     </Text>
                                 </ListItem>
                             )}
-                            <ListItem>
-                                <Flex>
-                                    <Badge my={'auto'} colorScheme="cyan" mr={2} fontSize="0.7em"><Icon as={BsPeople} /> Clients</Badge>
-                                    <Text as={'span'}>
-                                        <Stack direction='row'>
-                                            {details?.clients.map((item, index) => (
-                                                <Tooltip key={index} hasArrow label={item.name} bg='black' placement="right">
-                                                    <Avatar size={'md'} name={item.name} src={item.image} />
-                                                </Tooltip>
-                                            ))}
-                                        </Stack>
-                                    </Text>
-                                </Flex>
-                            </ListItem>
                             {development && (
                                 <ListItem>
                                     <Badge my={'auto'} colorScheme="cyan" mr={2} fontSize="0.7em"><Icon as={BsPeople} /> Development</Badge>
@@ -161,6 +148,43 @@ const PageId : NextPage = (props) => {
                                     </Text>
                                 </ListItem>
                             )}
+                            {related && (
+                                <ListItem>
+                                    <Badge my={'auto'} colorScheme="cyan" mr={2} fontSize="0.7em"><Icon as={GiRelationshipBounds} /> Related</Badge>
+                                    <Text as={'span'} fontSize="0.7em">
+                                        <List spacing={1}>
+                                            {related.map((item, idx) => (
+                                                <ListItem key={ idx }>
+                                                    <ListIcon as={ MdCheckCircle } color='green.500' />
+                                                    { item.name }&nbsp;-&nbsp;
+                                                    <NextLink href={ item.link } passHref>
+                                                        <Link
+                                                            _hover={ {
+                                                                color: 'blue'
+                                                            } }>
+                                                            Link <Icon as={HiLink} />
+                                                        </Link>
+                                                    </NextLink>
+                                                </ListItem>
+                                            ))}
+                                        </List>
+                                    </Text>
+                                </ListItem>
+                            )}
+                            <ListItem mt={3}>
+                                <Flex>
+                                    <Badge my={'auto'} colorScheme="cyan" mr={2} fontSize="0.7em"><Icon as={BsPeople} /> Clients</Badge>
+                                    <Text as={'span'}>
+                                        <Stack direction='row'>
+                                            {details?.clients.map((item, index) => (
+                                                <Tooltip key={index} hasArrow label={item.name} bg='black' placement="right">
+                                                    <Avatar size={'md'} name={item.name} src={item.image} />
+                                                </Tooltip>
+                                            ))}
+                                        </Stack>
+                                    </Text>
+                                </Flex>
+                            </ListItem>
                             {gallery && (
                                 <ListItem>
                                     <Badge my={'auto'} colorScheme="cyan" mr={2} fontSize="0.7em"><Icon as={GrMonitor} /> Screen</Badge>

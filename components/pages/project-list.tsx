@@ -81,7 +81,8 @@ const ProjectLists = ({ ...props }) => {
                                     description={item.description}
                                     publish={item.publish}
                                     image={item.image}
-                                    link={item.link} />
+                                    link={item.link}
+                                    status={item.status} />
                             ))}
                         </SimpleGrid>
                     </TabPanel>
@@ -95,7 +96,8 @@ const ProjectLists = ({ ...props }) => {
                                     description={item.description}
                                     publish={item.publish}
                                     image={item.image}
-                                    link={item.link} />
+                                    link={item.link}
+                                    status={item.status} />
                             ))}
                         </SimpleGrid>
                     </TabPanel>
@@ -109,7 +111,8 @@ const ProjectLists = ({ ...props }) => {
                                     description={item.description}
                                     publish={item.publish}
                                     image={item.image}
-                                    link={item.link} />
+                                    link={item.link}
+                                    status={item.status} />
                             ))}
                         </SimpleGrid>
                     </TabPanel>
@@ -123,7 +126,8 @@ const ProjectLists = ({ ...props }) => {
                                     description={item.description}
                                     publish={item.publish}
                                     image={item.image}
-                                    link={item.link} />
+                                    link={item.link}
+                                    status={item.status} />
                             ))}
                         </SimpleGrid>
                     </TabPanel>
@@ -137,7 +141,8 @@ const ProjectLists = ({ ...props }) => {
                                     description={item.description}
                                     publish={item.publish}
                                     image={item.image}
-                                    link={item.link} />
+                                    link={item.link}
+                                    status={item.status} />
                             ))}
                         </SimpleGrid>
                     </TabPanel>

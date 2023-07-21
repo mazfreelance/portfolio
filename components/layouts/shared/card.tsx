@@ -311,7 +311,7 @@ export const GitCard = (props: GitLiveProps) => {
 }
 
 export const ProjectCard = (props: ProjectProps) => {
-    const { name, description, publish, image, link } = props
+    const { name, description, publish, image, link, status } = props
 
     const { data, loading } = usePalette(image)
     return (
@@ -349,7 +349,12 @@ export const ProjectCard = (props: ProjectProps) => {
                                     fallbackSrc={ "/assets/images/no-image.jpg" }
                                 />
                                 <VStack align={ 'start' } flexGrow={ 1 } spacing={ 0 }>
-                                    <Text fontWeight="bold" fontSize="md" noOfLines={ 2 }>{ name } <Badge colorScheme={ 'cyan' }>{ publish }</Badge></Text>
+                                    <Text fontWeight="bold" fontSize="md" noOfLines={ 2 }>{ name }&nbsp;
+                                        <Badge colorScheme={ 'cyan' }>{ publish }</Badge>&nbsp;
+                                        {status && (
+                                            <Badge colorScheme={ 'green' }>Active</Badge>
+                                        )}
+                                    </Text>
                                     <Text fontSize="sm">{ description }</Text>
                                 </VStack>
                             </VStack>

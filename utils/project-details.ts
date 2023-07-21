@@ -8,7 +8,7 @@ export const ProjectDetails = {
             link: 'https://cookx.asia/',
             skills: ['PHP', 'Laravel 8', 'JavaScript', 'VueJS'],
             application: 'Mobile App, Admin Web, API',
-            latest: 'On Going',
+            latest: '20 July 2023',
             development: [
                 'Contribution to the development of API.',
                 'Maintain and develop new feature',
@@ -130,7 +130,7 @@ export const ProjectDetails = {
             name: 'Nimfa',
             description: 'A premium site where you can connect privately with models and influencers. it strives to give every user the chance to nurture life partnerships, informal hookups, and anything in between.',
             publish: '2021',
-            status: true,
+            status: false,
             link: 'https://nimfa.live',
             skills: ['PHP', 'Laravel'],
             application: 'API',
@@ -189,6 +189,12 @@ export const ProjectDetails = {
                 {
                     name: 'Ionnex Sdn Bhd',
                     image: '/assets/images/logos/ionnex.png'
+                }
+            ],
+            related: [
+                {
+                    name: 'Previous version',
+                    link: '/projects/rgg'
                 }
             ]
         },
@@ -291,6 +297,12 @@ export const ProjectDetails = {
                 {
                     name: 'Ionnex Sdn Bhd',
                     image: '/assets/images/logos/ionnex.png'
+                }
+            ],
+            related: [
+                {
+                    name: 'Upgrade new version',
+                    link: '/projects/rgg4.0'
                 }
             ]
         },
