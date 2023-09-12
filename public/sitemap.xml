@@ -5,27 +5,27 @@
   xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd"
 >
   <url>
-    <loc>http://localhost:5555</loc>
-    <lastmod>2023-01-18T16:12:06.433Z</lastmod>
+    <loc>undefined</loc>
+    <lastmod>2023-09-12T08:27:42.350Z</lastmod>
   </url>
 
   <url>
-    <loc>http://localhost:5555/open-source</loc>
-    <lastmod>2023-01-18T16:12:06.433Z</lastmod>
+    <loc>undefined/open-source</loc>
+    <lastmod>2023-09-12T08:27:42.350Z</lastmod>
   </url>
 
   <url>
-    <loc>http://localhost:5555/projects</loc>
-    <lastmod>2023-01-18T16:12:06.433Z</lastmod>
+    <loc>undefined/projects</loc>
+    <lastmod>2023-09-12T08:27:42.350Z</lastmod>
   </url>
 
   <url>
-    <loc>http://localhost:5555/tech-stack</loc>
-    <lastmod>2023-01-18T16:12:06.433Z</lastmod>
+    <loc>undefined/tech-stack</loc>
+    <lastmod>2023-09-12T08:27:42.350Z</lastmod>
   </url>
 
   <url>
-    <loc>http://localhost:5555/projects/[id]</loc>
-    <lastmod>2023-01-18T16:12:06.433Z</lastmod>
+    <loc>undefined/projects/[id]</loc>
+    <lastmod>2023-09-12T08:27:42.350Z</lastmod>
   </url>
 </url>

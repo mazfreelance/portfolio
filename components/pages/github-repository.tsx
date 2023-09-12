@@ -16,8 +16,9 @@ import useFetch from "use-http"
 import { useEffect, useState } from "react"
 
 const openSource = [
+    'malaysia-jajahan-api',
     'Lumen-Boilerplate',
-    'laravel-9-boilerplate',
+    'laravel-boilerplate',
     'nuxt-sweetalert2',
     'vue-winwheel',
     'yii2-audit',
