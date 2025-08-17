@@ -2,11 +2,19 @@ import { CareerEducationProps } from "../types"
 
 export const career: CareerEducationProps[] = [
     {
+        title: 'Asian Business Software Solution',
+        alt: 'ABSS image',
+        role: 'Full-stack Developer',
+        skills: ['php', 'laravel', 'phalcon', 'javascript', 'vue', 'angular'],
+        period: 'April 2024 - Present',
+        logo: '/assets/images/logos/abss.jpeg',
+    },
+    {
         title: 'Volservers Solution Sdn Bhd',
         alt: 'Volservers image',
         role: 'Full-stack Developer',
         skills: ['php', 'laravel', 'javascript', 'vue'],
-        period: 'August 2022 - Present',
+        period: 'August 2022 - March 2024',
         logo: '/assets/images/logos/volservers.jpg',
     },
     {

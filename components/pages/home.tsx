@@ -120,7 +120,9 @@ const Home: React.FC = (props) => {
                                 </Flex>
                             </Heading>
                             <Text textAlign={'justify'}>
-                                Hi👋, I am Azmin and a web developer based in Kuala Lumpur, Malaysia with a passion for building digital services. I have 5+ years working experience as a Web Developer for multiple company as a full time and a freelance. I love working in a team and sharing new knowledge. You can free around on my page to know more about me. Thanks for visiting this page. 🤙
+                                Hi, I’m Mohd Azmin—a Full-Stack Developer with 5+ years of experience building scalable, high-performance web applications. I specialize in PHP(Laravel, Phalcon, Yii2), AngularJS and Vue.js, helping businesses and startups turn ideas into seamless digital solutions. Passionate about clean code and problem-solving, I deliver work that’s not only functional but drives real results.
+                                <br/><br/>
+                                👉 Explore my projects or reach out if you’re looking for someone to elevate your digital presence.
                             </Text>
                         </Section>
                         <Section

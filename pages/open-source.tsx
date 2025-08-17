@@ -9,7 +9,7 @@ import {
     TabList,
     Tab,
     TabPanel,
-    TabPanels
+    TabPanels,
 } from "@chakra-ui/react"
 import { PageSliderFade } from "components/animations/page-transition"
 import PageLayout from "components/layouts/page"
@@ -17,6 +17,8 @@ import Header from "components/layouts/shared/header"
 import GitHubRepository from "components/pages/github-repository"
 import { AiFillGithub } from 'react-icons/ai';
 import Gist from "components/pages/gist"
+import { VscFileCode } from "react-icons/vsc"
+import { RiGitRepositoryCommitsLine } from "react-icons/ri"
 
 const OpenSource: NextPage = () => {
 
@@ -38,8 +40,8 @@ const OpenSource: NextPage = () => {
                 </VStack>
                 <Tabs>
                     <TabList>
-                        <Tab>Repository</Tab>
-                        <Tab>Gist</Tab>
+                        <Tab><RiGitRepositoryCommitsLine/>&nbsp;Repository</Tab>
+                        <Tab><VscFileCode/>&nbsp;Gist</Tab>
                     </TabList>
 
                     <TabPanels p={ 0}>

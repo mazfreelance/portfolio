@@ -2,6 +2,24 @@ import { ProjectProps } from "../types";
 
 export const projects: ProjectProps[] = [
     {
+        name: 'Financio',
+        description: 'Accounting software',
+        publish: '2024',
+        image: '/assets/images/projects/financio.png',
+        filter: ['webapp', 'app', 'api', 'account-software'],
+        link: '/projects/financioaccounting',
+        status: true
+    },
+    {
+        name: 'Core Collective by Aurum',
+        description: 'e-Commerce systems',
+        publish: '2024',
+        image: '/assets/images/projects/corecollective.png',
+        filter: ['webapp', 'app', 'api', 'ecommerce'],
+        link: '/projects/corecollective',
+        status: true
+    },
+    {
         name: 'CookX Asia',
         description: 'e-Commerce systems',
         publish: '2022',

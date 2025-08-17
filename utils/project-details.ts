@@ -1,5 +1,73 @@
 export const ProjectDetails = {
-    lists: [{
+    lists: [
+        {
+            slug: 'financioaccounting',
+            name: 'Financio Cloudbase Accounting Software',
+            description: 'Updating...',
+            publish: '2024',
+            status: true,
+            link: 'https://financio.co/',
+            skills: [],
+            application: 'Mobile App, Web App, API',
+            latest: '-',
+            development: [
+                'Contribution to the development of API.',
+                '...',
+            ],
+            gallery: [
+                {
+                    'name': 'Mobile App',
+                    'data':  [
+                        {
+                            original: null,
+                            thumbnail: null,
+                        },
+                    ]
+                },
+                {
+                    'name': 'Web App',
+                    'data': [
+                        {
+                            // original: '/assets/images/projects/gallery/cookx/admin/login.png',
+                            thumbnail: null,
+                        },
+                        {
+                            // original: '/assets/images/projects/gallery/cookx/admin/dashboard.png',
+                            thumbnail: null,
+                        }
+                    ]
+                }
+            ],
+            clients: [
+                {
+                    name: 'Asian Business Software Solution',
+                    image: '/assets/images/logos/abss.jpeg'
+                }
+            ]
+        },
+        {
+            slug: 'corecollective',
+            name: 'Core Collective by Aurum',
+            description: 'Experience Fitness & Wellness All Under One Roof. Invigorate, revitalise and restore with the top professionals. Explore a variety of services available at Core Collective.',
+            publish: '2024',
+            status: true,
+            link: 'https://www.corecollective.sg/',
+            skills: ['PHP', 'Laravel 9', 'JavaScript', 'VueJS', 'Flutter (Mobile App)'],
+            application: 'Mobile App, Admin Web, API',
+            latest: '31st March 2024',
+            development: [
+                'Contribution to the development of API.',
+                'Maintain and develop new feature',
+            ],
+            gallery: [],
+            clients: [
+                {
+                    name: 'Volserver Solution Sdn Bhd',
+                    image: '/assets/images/logos/volservers.jpg'
+                }
+            ]
+        },
+        {
             slug: 'cookx',
             name: 'CookX Asia',
             description: 'App designed for aspiring chefs and home cooks. Connecting food enthusiasts and foodpreneurs through all things food where they can CREATE, SHARE and MONETISE their food businesses. Users can enjoy pre-order features and learn to cook through video tutorials.',

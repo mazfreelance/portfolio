@@ -1,4 +1,9 @@
 import {
+    Accordion,
+    AccordionButton,
+    AccordionIcon,
+    AccordionItem,
+    AccordionPanel,
     Badge,
     Box,
     Flex,
@@ -384,6 +389,55 @@ export const GistCard = (props: GistLiveProps) => {
     }
 
     return (
+        <Accordion allowMultiple mx={1} my={[2, 1, 1]}>
+            <AccordionItem>
+                <Heading as='h2' size='4xl'>
+                    <AccordionButton height={35} data-index="1">
+                        <Box as="span" flex='1' textAlign='left'>
+                            <List spacing={ 3 }>
+                                <ListItem>
+                                    <Flex
+                                        onClick={ ((e) => handleLink(e, url)) }
+                                        justifyContent={ 'space-between' }
+                                        width="100%">
+                                        <Tooltip hasArrow label="Gists link" placement="top">
+                                            <HStack cursor={ 'pointer' }>
+                                                <Text fontSize="md"
+                                                    noOfLines={ 1 }
+                                                    fontWeight="800"
+                                                    align="left">
+                                                    { title }
+                                                </Text>
+                                            </HStack>
+                                        </Tooltip>
+                                        <HStack
+                                            cursor="pointer"
+                                            onClick={ ((e) => handleLink(e, url)) }
+                                        >
+                                            { comments_count && (
+                                                <Box _hover={ { color: 'blue.500' } }>
+                                                    <Icon as={ BiComment } fontSize="sm" boxSize={ '0.9em' } />
+                                                    <Text as={ 'span' } ml={ 1 } fontSize="sm">
+                                                        { comments_count }
+                                                    </Text>
+                                                </Box>
+                                            ) }
+
+                                        </HStack>
+                                    </Flex>
+                                </ListItem>
+                            </List> 
+                        </Box>
+                        <AccordionIcon />
+                    </AccordionButton>
+                </Heading>
+                <AccordionPanel pb={4} height={190}>
+                    { title }
+                </AccordionPanel>
+            </AccordionItem>
+        </Accordion>
+    )
+    /* return (
         <MotionBox whileHover={ { y: 10 } }>
             <Box
                 borderWidth={ '1px' }
@@ -439,5 +493,5 @@ export const GistCard = (props: GistLiveProps) => {
                 </VStack>
             </Box>
         </MotionBox>
-    )
+    ) */
 }
